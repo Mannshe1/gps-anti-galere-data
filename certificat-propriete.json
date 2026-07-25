@@ -1,0 +1,72 @@
+{
+  "id": "certificat_propriete_fonciere",
+  "demarche": "Certificat de propriété foncière",
+  "pays": "Cameroun",
+  "categorie": "Foncier",
+  "ministere": {
+    "nom": "Ministère des Domaines, du Cadastre et des Affaires Foncières",
+    "sigle": "MINDCAF"
+  },
+  "organisme_competent": {
+    "nom": "Conservation foncière territorialement compétente",
+    "type": "Conservation foncière"
+  },
+  "description": "Document délivré par le Conservateur foncier attestant la propriété d'un immeuble immatriculé inscrit au livre foncier.",
+  "pieces_requises": {
+    "demande_standard": [
+      "Demande adressée au Conservateur foncier compétent",
+      "Références du titre foncier concerné (numéro du titre foncier)",
+      "Pièce d'identité valide du demandeur",
+      "Procuration, lorsque la demande est présentée par un mandataire",
+      "Justificatif du paiement des droits exigibles"
+    ]
+  },
+  "cout": {
+    "montant": 5000,
+    "devise": "XAF",
+    "variable": false,
+    "details": [
+      {
+        "libelle": "Délivrance d'un certificat (relevé) de propriété",
+        "montant": 5000
+      }
+    ]
+  },
+  "lieu_depot": {
+    "physique": [
+      "Conservation foncière du ressort où est situé l'immeuble"
+    ],
+    "en_ligne": {
+      "disponible": false,
+      "url": null
+    }
+  },
+  "delai": {
+    "officiel": null,
+    "constate": "Variable selon la conservation foncière et la disponibilité du registre foncier."
+  },
+  "base_legale": [
+    {
+      "texte": "Ordonnance n°74-1 du 6 juillet 1974 fixant le régime foncier",
+      "type": "Ordonnance"
+    },
+    {
+      "texte": "Décret n°76-165 du 27 avril 1976 fixant les conditions d'obtention du titre foncier",
+      "type": "Décret"
+    }
+  ],
+  "source_officielle": [
+    {
+      "organisme": "MINDCAF",
+      "titre": "Foire aux questions - Relevés des certificats de propriété",
+      "url": "https://mindcaf.gov.cm/fr/faq/"
+    },
+    {
+      "organisme": "MINDCAF",
+      "titre": "Guide de l'usager et manuels des procédures foncières",
+      "url": "https://mindcaf.gov.cm/fr/docs/"
+    }
+  ],
+  "derniere_verification": "2026-07-25",
+  "notes": "Le MINDCAF indique un droit forfaitaire de 5 000 FCFA par titre foncier pour les relevés des certificats de propriété. Le délai de délivrance n'est pas fixé par un texte national publié et peut varier selon la conservation foncière compétente. :contentReference[oaicite:1]{index=1}"
+}
