@@ -1,0 +1,41 @@
+{
+  "demarche": "Certificat de nationalité camerounaise",
+  "pays": "Cameroun",
+  "categorie": "Justice",
+  "pieces_requises": {
+    "demande_standard": [
+      "Demande adressée au Président du Tribunal de Première Instance territorialement compétent",
+      "Copie certifiée conforme de l'acte de naissance du demandeur",
+      "Copie certifiée conforme de la Carte Nationale d'Identité (pour les majeurs, lorsqu'elle est disponible)",
+      "Copie certifiée conforme de l'acte de naissance du père et/ou de la mère camerounais, lorsque nécessaire pour établir la filiation",
+      "Tout document permettant d'établir la nationalité camerounaise lorsque la filiation ou la nationalité est contestée",
+      "Timbre fiscal conformément à la réglementation en vigueur"
+    ]
+  },
+  "cout_officiel_fcfa": {
+    "montant": null,
+    "devise": "FCFA",
+    "precision": "Le montant du timbre fiscal applicable n'est pas fixé de manière uniforme dans une publication nationale récente consultable. Aucun chiffre n'est renseigné afin d'éviter toute information inexacte."
+  },
+  "lieu_depot": {
+    "organisme": "Tribunal de Première Instance (TPI)",
+    "service": "Greffe civil du Tribunal de Première Instance territorialement compétent"
+  },
+  "delai_moyen": "Le délai varie selon les juridictions. En pratique, il est généralement compris entre quelques jours et plusieurs semaines selon les vérifications nécessaires.",
+  "base_legale": [
+    "Loi n°1968-LF-3 du 11 juin 1968 portant Code de la nationalité camerounaise, telle que modifiée.",
+    "Code de procédure civile et commerciale pour les règles de compétence des juridictions."
+  ],
+  "source_officielle": [
+    {
+      "organisme": "Ministère de la Justice (MINJUSTICE)",
+      "url": "https://www.minjustice.gov.cm/"
+    },
+    {
+      "organisme": "Code de la nationalité camerounaise",
+      "reference": "Loi n°1968-LF-3 du 11 juin 1968"
+    }
+  ],
+  "derniere_verification": "2026-07-25",
+  "notes": "Le président du Tribunal peut exiger toute pièce complémentaire nécessaire pour établir avec certitude la nationalité camerounaise du demandeur. Les pratiques peuvent légèrement varier selon les juridictions. Aucun tarif national officiel récent n'a pu être confirmé ; le montant est donc laissé à null afin de ne pas introduire une information non vérifiée."
+}
