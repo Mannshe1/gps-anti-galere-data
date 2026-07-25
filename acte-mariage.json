@@ -1,103 +1,187 @@
 {
   "id": "acte_mariage",
-  "demarche": "Acte de mariage (Mariage civil)",
-  "pays": "Cameroun",
-  "categorie": "État civil",
-  "ministere": {
-    "nom": "Ministère de la Décentralisation et du Développement Local",
-    "sigle": "MINDDEVEL"
+  "demarche": "Acte de mariage",
+  "categorie": "État civil / Actes familiaux",
+
+  "description": "Document officiel d'état civil constatant la célébration d'un mariage entre deux personnes et contenant les informations relatives aux époux, aux témoins et à la date du mariage.",
+
+  "autorite_competente": {
+    "ministere": "Ministère de la Décentralisation et du Développement Local (MINDDEVEL)",
+    "organisme": "Commune / Centre d'état civil compétent",
+    "service": "Officier d'état civil"
   },
-  "organisme_competent": {
-    "nom": "Mairie du lieu de célébration",
-    "type": "Service de l'état civil"
-  },
-  "description": "Célébration du mariage civil devant l'Officier d'état civil et établissement de l'acte de mariage.",
+
   "beneficiaires": [
-    "Toute personne remplissant les conditions légales du mariage au Cameroun."
+    "Époux concernés par le mariage",
+    "Représentants légalement autorisés",
+    "Administrations demandant une preuve de mariage"
   ],
+
   "conditions": [
-    "Consentement libre des futurs époux.",
-    "Capacité juridique de se marier.",
-    "Publication préalable des bans conformément à la loi."
+    "Le mariage doit avoir été célébré et enregistré auprès d'un centre d'état civil compétent",
+    "Fournir les informations permettant de retrouver l'acte"
   ],
+
   "pieces_requises": {
-    "dossier_de_mariage": [
-      "Copie certifiée conforme de l'acte de naissance de chacun des futurs époux",
-      "Certificat de célibat de chacun des futurs époux",
-      "Certificat de résidence (ou domicile) de chacun des futurs époux",
-      "Photocopie de la Carte Nationale d'Identité de chacun des futurs époux",
-      "Photocopie des Cartes Nationales d'Identité des témoins",
-      "Contrat de mariage, lorsqu'un régime matrimonial particulier est choisi",
-      "Photographies d'identité, lorsque la mairie les exige"
+    "premiere_demande": [
+      "Demande de copie ou d'extrait d'acte de mariage",
+      "Pièce d'identité du demandeur",
+      "Informations relatives aux époux (noms, date et lieu du mariage)"
+    ],
+
+    "renouvellement": [
+      "Nouvelle demande de copie ou extrait",
+      "Pièce d'identité du demandeur"
+    ],
+
+    "duplicata": [
+      "Demande de nouvelle copie",
+      "Pièce d'identité",
+      "Informations permettant la recherche dans les registres"
+    ],
+
+    "cas_particuliers": [
+      "Procuration lorsque la demande est faite par un tiers",
+      "Décision judiciaire en cas de rectification ou modification d'acte"
     ]
   },
+
+  "documents_associes": [
+    {
+      "nom": "Pièce d'identité",
+      "obligatoire": true,
+      "description": "Permet d'identifier le demandeur."
+    },
+    {
+      "nom": "Livret de famille",
+      "obligatoire": false,
+      "description": "Peut faciliter certaines recherches administratives."
+    }
+  ],
+
   "cout": {
     "montant": null,
     "devise": "XAF",
     "variable": true,
     "details": [],
-    "precision": "Les frais de célébration, de publication des bans et les droits communaux sont fixés par chaque commune. Il n'existe pas de tarif national unique."
+    "precision": "Les frais de délivrance d'une copie ou d'un extrait d'acte d'état civil peuvent varier selon les communes. Aucun tarif national unique confirmé n'est renseigné."
   },
+
   "procedure": [
     {
       "ordre": 1,
-      "titre": "Constitution du dossier"
+      "titre": "Recherche de l'acte",
+      "description": "Identifier le centre d'état civil où le mariage a été enregistré."
     },
     {
       "ordre": 2,
-      "titre": "Dépôt du dossier à la mairie"
+      "titre": "Dépôt de la demande",
+      "description": "Présenter la demande auprès du service d'état civil compétent."
     },
     {
       "ordre": 3,
-      "titre": "Publication des bans"
+      "titre": "Vérification des registres",
+      "description": "L'officier d'état civil vérifie l'inscription du mariage."
     },
     {
       "ordre": 4,
-      "titre": "Célébration du mariage"
-    },
-    {
-      "ordre": 5,
-      "titre": "Signature de l'acte et remise du livret de famille"
+      "titre": "Délivrance du document",
+      "description": "Une copie ou un extrait de l'acte de mariage est remis au demandeur."
     }
   ],
+
   "lieu_depot": {
     "physique": [
-      "Service de l'état civil de la mairie compétente"
+      "Centre d'état civil où le mariage a été enregistré",
+      "Service d'état civil de la commune concernée"
     ],
     "en_ligne": {
       "disponible": false,
       "url": null
     }
   },
+
   "delai": {
     "officiel": null,
-    "constate": "La célébration intervient après la publication légale des bans et l'acceptation du dossier par la mairie."
+    "moyen_pratique": "Souvent délivré rapidement lorsque l'acte est retrouvé dans les registres disponibles."
   },
+
   "validite": {
-    "duree": "Permanent"
+    "duree": "L'acte de mariage n'a pas de durée d'expiration.",
+    "conditions": "Certaines administrations peuvent demander une copie récente."
   },
+
+  "paiement": {
+    "moyens": [
+      "Selon les modalités de la commune ou du centre d'état civil"
+    ],
+    "en_ligne": false
+  },
+
+  "prise_rendez_vous": {
+    "obligatoire": false,
+    "modalite": "Variable selon la commune."
+  },
+
   "base_legale": [
     {
-      "texte": "Ordonnance n°81-02 du 29 juin 1981 portant organisation de l'état civil",
-      "type": "Ordonnance"
+      "texte": "Loi n°2024/016 du 23 décembre 2024 portant organisation du système d'état civil au Cameroun",
+      "type": "Loi",
+      "reference": "2024/016",
+      "date": "2024-12-23"
     },
     {
-      "texte": "Code civil applicable en matière de mariage",
-      "type": "Code"
+      "texte": "Ordonnance n°81-02 du 29 juin 1981 portant organisation de l'état civil au Cameroun",
+      "type": "Ordonnance",
+      "reference": "81-02",
+      "date": "1981-06-29"
     }
   ],
-  "source_officielle": [
+
+  "sources": [
     {
-      "organisme": "eRegulations Cameroun",
-      "url": "https://yaounde.eregulations.org/procedure/print/81/69/step/0?l=fr&showCertification=false&showRecourses=true",
-      "date_consultation": "2026-07-25"
+      "organisme": "Ministère de la Décentralisation et du Développement Local (MINDDEVEL)",
+      "titre": "Organisation des services d'état civil",
+      "url": "https://minddevel.gov.cm/",
+      "date_verification": "2026-07-25"
+    }
+  ],
+
+  "faq": [
+    {
+      "question": "Où obtenir un acte de mariage ?",
+      "reponse": "Auprès du centre d'état civil qui a enregistré le mariage."
     },
     {
-      "organisme": "Communauté Urbaine d'Edéa",
-      "url": "https://www.edea.cm/ova_doc/la-procedure-pour-acte-de-mariage/",
-      "date_consultation": "2026-07-25"
+      "question": "Peut-on demander l'acte de mariage d'une autre personne ?",
+      "reponse": "L'accès dépend de la qualité du demandeur et des règles applicables aux actes d'état civil."
+    },
+    {
+      "question": "Un acte de mariage expire-t-il ?",
+      "reponse": "Non, mais certaines administrations exigent une copie récente."
     }
   ],
-  "derniere_verification": "2026-07-25",
-  "notes": "Le dossier peut varier légèrement selon les communes. En revanche, les pièces essentielles (actes de naissance, certificats de célibat, certificats de résidence, pièces d'identité et publication des bans) sont communes à la majorité des mairies camerounaises. Aucun coût national officiel unique n'est fixé ; les droits sont déterminés par chaque commune. :contentReference[oaicite:0]{index=0}"
+
+  "mots_cles": [
+    "Acte de mariage",
+    "État civil",
+    "Mariage",
+    "Copie intégrale",
+    "Commune"
+  ],
+
+  "notes": "Les procédures et frais peuvent varier selon les communes. Pour les mariages anciens ou enregistrés dans une autre localité, des délais supplémentaires peuvent être nécessaires pour retrouver les registres.",
+
+  "statut_verification": {
+    "verifie": true,
+    "niveau_confiance": "élevé",
+    "elements_a_verifier": [
+      "Tarifs appliqués par chaque commune",
+      "Déploiement complet du système numérique d'état civil"
+    ]
+  },
+
+  "version": "1.0",
+
+  "derniere_verification": "2026-07-25"
 }
