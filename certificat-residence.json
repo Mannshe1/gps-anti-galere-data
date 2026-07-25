@@ -1,0 +1,40 @@
+{
+  "demarche": "Certificat de résidence",
+  "pays": "Cameroun",
+  "categorie": "État civil",
+  "pieces_requises": {
+    "demande_standard": [
+      "Demande adressée au Maire ou à l'Officier d'état civil",
+      "Photocopie de la Carte Nationale d'Identité (CNI) en cours de validité",
+      "Justificatif de domicile (facture d'eau, d'électricité, contrat de bail, attestation d'hébergement ou tout autre document accepté par la commune)",
+      "Présence de deux témoins majeurs résidant dans la même localité, munis de leurs Cartes Nationales d'Identité, lorsque la commune l'exige"
+    ]
+  },
+  "cout_officiel_fcfa": {
+    "montant": null,
+    "devise": "FCFA",
+    "precision": "Il n'existe pas de tarif national unique. Les droits de timbre et frais communaux sont fixés par chaque commune."
+  },
+  "lieu_depot": {
+    "organisme": "Service de l'état civil",
+    "etablissement": "Mairie (Commune d'arrondissement) du lieu de résidence du demandeur."
+  },
+  "delai_moyen": "Généralement délivré le jour même lorsque le dossier est complet ; dans certaines communes, le délai peut aller de 1 à 3 jours ouvrables.",
+  "base_legale": [
+    "Ordonnance n°81-02 du 29 juin 1981 portant organisation de l'état civil.",
+    "Code Général des Collectivités Territoriales Décentralisées.",
+    "Procédures administratives publiées par les communes."
+  ],
+  "source_officielle": [
+    {
+      "organisme": "eRegulations Cameroun",
+      "url": "https://yaounde.eregulations.org/"
+    },
+    {
+      "organisme": "Commune de Douala Ier",
+      "url": "https://mairiedouala1.cm/wp-content/uploads/2016/05/CERTIFICAT-DOMICILE-ET-CELIBAT.pdf"
+    }
+  ],
+  "derniere_verification": "2026-07-25",
+  "notes": "Les pièces justificatives de domicile peuvent varier selon les communes. Certaines exigent systématiquement deux témoins tandis que d'autres acceptent un justificatif de domicile récent. Aucun coût officiel national n'étant fixé, le montant n'est pas renseigné afin d'éviter toute information inexacte."
+}
