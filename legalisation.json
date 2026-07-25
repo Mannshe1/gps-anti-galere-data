@@ -1,45 +1,181 @@
 {
+  "id": "legalisation_documents",
   "demarche": "Légalisation de documents",
-  "pays": "Cameroun",
-  "categorie": "Justice",
-  "pieces_requises": {
-    "demande_standard": [
-      "Original du document à légaliser",
-      "Photocopie du document",
-      "Carte Nationale d'Identité (CNI) ou autre pièce d'identité valide du demandeur",
-      "Timbre fiscal lorsque requis par l'autorité compétente"
-    ]
+  "categorie": "Justice / Administration",
+
+  "description": "Formalité administrative consistant à authentifier une signature, une copie ou une conformité de document afin de permettre son utilisation auprès d'une administration ou d'un organisme demandeur.",
+
+  "autorite_competente": {
+    "ministere": "Administration territoriale / Collectivités territoriales",
+    "organisme": "Autorité administrative compétente",
+    "service": "Service habilité à légaliser les documents"
   },
-  "cout_officiel_fcfa": {
-    "montant": null,
-    "devise": "FCFA",
-    "precision": "Le coût varie selon la nature du document, l'autorité compétente et les droits de timbre applicables. Aucun tarif national unique n'est fixé pour toutes les légalisations."
-  },
-  "lieu_depot": {
-    "autorites_competentes": [
-      "Commissariat de Police",
-      "Brigade de Gendarmerie",
-      "Mairie (Commune)",
-      "Sous-préfecture ou Préfecture, selon la nature du document",
-      "Administration ayant délivré le document, lorsque la réglementation l'impose"
-    ]
-  },
-  "delai_moyen": "Le document est généralement légalisé le jour même lorsque le dossier est complet.",
-  "base_legale": [
-    "Décret n°2010/0246/PM du 26 février 2010 fixant les modalités d'exercice de certaines compétences transférées aux communes en matière d'état civil.",
-    "Textes particuliers régissant la légalisation des actes administratifs.",
-    "Instructions administratives du MINAT et des collectivités territoriales."
+
+  "beneficiaires": [
+    "Particuliers",
+    "Entreprises",
+    "Administrations",
+    "Organisations ayant besoin d'un document authentifié"
   ],
-  "source_officielle": [
+
+  "conditions": [
+    "Présenter le document original ou la copie concernée",
+    "Présenter une pièce d'identité valide",
+    "Le document doit être légalement recevable"
+  ],
+
+  "pieces_requises": {
+    "premiere_demande": [
+      "Document original à légaliser",
+      "Copie du document lorsque nécessaire",
+      "Carte Nationale d'Identité ou pièce d'identité valide du demandeur"
+    ],
+
+    "renouvellement": [
+      "Nouveau document à légaliser",
+      "Pièce d'identité valide"
+    ],
+
+    "duplicata": [
+      "Document concerné",
+      "Pièce d'identité du demandeur"
+    ],
+
+    "cas_particuliers": [
+      "Documents destinés à l'étranger pouvant nécessiter des formalités supplémentaires",
+      "Traduction assermentée lorsque le document est dans une langue non acceptée par l'administration destinataire"
+    ]
+  },
+
+  "documents_associes": [
     {
-      "organisme": "eRegulations Cameroun",
-      "url": "https://yaounde.eregulations.org/"
+      "nom": "Pièce d'identité",
+      "obligatoire": true,
+      "description": "Permet d'identifier la personne demandant la légalisation."
     },
     {
-      "organisme": "Ministère de l'Administration Territoriale (MINAT)",
-      "url": "https://www.minat.gov.cm/"
+      "nom": "Document original",
+      "obligatoire": true,
+      "description": "Support devant faire l'objet de la légalisation."
     }
   ],
-  "derniere_verification": "2026-07-25",
-  "notes": "La légalisation est une procédure qui certifie la conformité d'une copie à son original ou l'authenticité d'une signature, selon le cas. Les frais et l'autorité compétente varient selon la nature du document. Aucun coût officiel unique applicable à toutes les légalisations n'a été identifié."
+
+  "cout": {
+    "montant": null,
+    "devise": "XAF",
+    "variable": true,
+    "details": [],
+    "precision": "Les frais dépendent de la nature de la légalisation et de l'autorité compétente. Aucun tarif national unique n'est renseigné."
+  },
+
+  "procedure": [
+    {
+      "ordre": 1,
+      "titre": "Préparation du document",
+      "description": "Présenter le document original et les justificatifs nécessaires."
+    },
+    {
+      "ordre": 2,
+      "titre": "Contrôle administratif",
+      "description": "L'autorité vérifie l'identité du demandeur et la conformité du document."
+    },
+    {
+      "ordre": 3,
+      "titre": "Apposition du visa ou cachet",
+      "description": "L'autorité compétente appose la mention de légalisation."
+    },
+    {
+      "ordre": 4,
+      "titre": "Retrait du document",
+      "description": "Le document légalisé est remis au demandeur."
+    }
+  ],
+
+  "lieu_depot": {
+    "physique": [
+      "Mairie compétente",
+      "Autorité administrative habilitée selon la nature du document"
+    ],
+    "en_ligne": {
+      "disponible": false,
+      "url": null
+    }
+  },
+
+  "delai": {
+    "officiel": null,
+    "moyen_pratique": "Souvent réalisé le même jour lorsque le document est conforme et que le service est disponible."
+  },
+
+  "validite": {
+    "duree": "La légalisation reste liée au document authentifié.",
+    "conditions": "Certains organismes peuvent exiger une légalisation récente."
+  },
+
+  "paiement": {
+    "moyens": [
+      "Selon les modalités de l'autorité administrative compétente"
+    ],
+    "en_ligne": false
+  },
+
+  "prise_rendez_vous": {
+    "obligatoire": false,
+    "modalite": "Variable selon l'administration concernée."
+  },
+
+  "base_legale": [
+    {
+      "texte": "Textes relatifs aux attributions des autorités administratives et des officiers d'état civil",
+      "type": "Réglementation administrative",
+      "reference": "",
+      "date": ""
+    }
+  ],
+
+  "sources": [
+    {
+      "organisme": "Ministère de l'Administration Territoriale du Cameroun",
+      "titre": "Organisation des services administratifs",
+      "url": "https://minat.gov.cm/",
+      "date_verification": "2026-07-25"
+    }
+  ],
+
+  "faq": [
+    {
+      "question": "Où faire légaliser un document au Cameroun ?",
+      "reponse": "Auprès d'une autorité habilitée, notamment certains services administratifs ou communes selon la nature du document."
+    },
+    {
+      "question": "La légalisation est-elle obligatoire pour tous les documents ?",
+      "reponse": "Non, elle dépend de l'administration ou de l'organisme qui exige le document."
+    },
+    {
+      "question": "Une traduction doit-elle être légalisée ?",
+      "reponse": "Pour certains usages internationaux, une traduction assermentée et des formalités supplémentaires peuvent être nécessaires."
+    }
+  ],
+
+  "mots_cles": [
+    "Légalisation",
+    "Authentification",
+    "Copie certifiée conforme",
+    "Document administratif"
+  ],
+
+  "notes": "La légalisation est une formalité dont les modalités varient selon le document concerné et l'administration destinataire. Il faut distinguer la légalisation simple, la certification conforme, l'authentification internationale et l'apostille lorsque celle-ci est applicable.",
+
+  "statut_verification": {
+    "verifie": true,
+    "niveau_confiance": "moyen",
+    "elements_a_verifier": [
+      "Tarifs exacts selon chaque autorité",
+      "Liste précise des autorités habilitées selon chaque type de document"
+    ]
+  },
+
+  "version": "1.0",
+
+  "derniere_verification": "2026-07-25"
 }
