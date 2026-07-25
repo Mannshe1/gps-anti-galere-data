@@ -1,0 +1,56 @@
+{
+  "demarche": "Numéro d'Identifiant Unique (NIU) - Immatriculation fiscale",
+  "pays": "Cameroun",
+  "categorie": "Fiscalité",
+  "pieces_requises": {
+    "personne_physique_professionnelle": [
+      "Carte Nationale d'Identité (CNI) en cours de validité ou passeport",
+      "Plan de localisation de l'activité",
+      "Registre du Commerce et du Crédit Mobilier (RCCM), le cas échéant",
+      "Relevé d'Identité Bancaire (RIB)",
+      "Adresse électronique valide",
+      "Numéro de téléphone"
+    ],
+    "personne_physique_non_professionnelle": [
+      "Carte Nationale d'Identité (CNI) en cours de validité (ou carte de séjour/passeport selon le statut)",
+      "Plan de localisation",
+      "Relevé d'Identité Bancaire (RIB)",
+      "Adresse électronique valide",
+      "Numéro de téléphone"
+    ],
+    "personne_morale": [
+      "Registre du Commerce et du Crédit Mobilier (RCCM) ou acte de création",
+      "Plan de localisation",
+      "Relevé d'Identité Bancaire (RIB)",
+      "Adresse électronique officielle",
+      "Numéro de téléphone"
+    ]
+  },
+  "cout_officiel_fcfa": {
+    "montant": 0,
+    "devise": "FCFA",
+    "precision": "L'immatriculation fiscale et l'attribution du NIU sont entièrement gratuites."
+  },
+  "lieu_depot": {
+    "demarche_en_ligne": "Plateforme d'immatriculation de la Direction Générale des Impôts (DGI).",
+    "url": "https://www.impots.cm",
+    "centre_competent": "Le contribuable est automatiquement rattaché au Centre des Impôts compétent après validation de son immatriculation."
+  },
+  "delai_moyen": "Le NIU est généralement attribué automatiquement après validation du dossier électronique. En cas de contrôle complémentaire, un délai supplémentaire peut être nécessaire.",
+  "base_legale": [
+    "Article L1 du Livre des Procédures Fiscales.",
+    "Décret n°2012/3731/PM du 13 novembre 2012 fixant les modalités d'application du Code Général des Impôts relatives à l'immatriculation fiscale."
+  ],
+  "source_officielle": [
+    {
+      "organisme": "Direction Générale des Impôts (DGI)",
+      "url": "https://www.impots.cm"
+    },
+    {
+      "organisme": "Guide officiel de l'immatriculation fiscale",
+      "url": "https://www.impots.cm/sites/default/files/documents/FT%20immatriculation%20ok.pdf"
+    }
+  ],
+  "derniere_verification": "2026-07-25",
+  "notes": "Depuis le 1er avril 2020, l'immatriculation fiscale s'effectue exclusivement en ligne. L'attestation d'immatriculation remplace la carte de contribuable et mentionne le NIU, le régime fiscal et le centre des impôts de rattachement."
+}
