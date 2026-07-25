@@ -1,0 +1,49 @@
+{
+  "demarche": "Casier judiciaire (Bulletin n°3)",
+  "pays": "Cameroun",
+  "categorie": "Justice",
+  "pieces_requises": {
+    "demande_standard": [
+      "Demande timbrée adressée au Président du Tribunal compétent",
+      "Original de la Carte Nationale d'Identité ou copie certifiée conforme",
+      "À défaut, original ou copie certifiée conforme de l'acte de naissance",
+      "Deux timbres fiscaux de 1 000 FCFA chacun (un pour la demande et un pour le bulletin)"
+    ],
+    "ressortissant_etranger": [
+      "Demande timbrée",
+      "Passeport ou titre d'identité valide",
+      "Document justifiant le séjour au Cameroun, le cas échéant"
+    ]
+  },
+  "cout_officiel_fcfa": {
+    "montant": 2100,
+    "devise": "FCFA",
+    "detail": {
+      "timbre_sur_la_demande": 1000,
+      "timbre_sur_le_bulletin": 1000,
+      "frais_de_recherche": 100
+    },
+    "precision": "Le coût officiel est composé de deux timbres fiscaux de 1 000 FCFA et de 100 FCFA de frais de recherche."
+  },
+  "lieu_depot": {
+    "citoyen_camerounais": "Greffe du Tribunal de Première Instance du lieu de naissance.",
+    "cas_particuliers": "Pour certaines situations particulières (notamment certains ressortissants étrangers), la demande est déposée auprès du Ministère de la Justice (Direction des Affaires Pénales et des Grâces)."
+  },
+  "delai_moyen": "24 heures lorsque le dossier est complet ; il peut atteindre 72 heures selon l'affluence ou la juridiction.",
+  "base_legale": [
+    "Loi n°2005/007 du 27 juillet 2005 portant Code de procédure pénale (articles 581 et suivants).",
+    "Procédure de délivrance du casier judiciaire publiée par le Ministère de la Justice."
+  ],
+  "source_officielle": [
+    {
+      "organisme": "Ministère de la Justice (MINJUSTICE)",
+      "url": "https://minjustice.gov.cm/index.php/fr/services-aux-usagers/procedures-usuelles/331-procedure-de-delivrance-de-casier-judiciaire"
+    },
+    {
+      "organisme": "eRegulations Cameroun",
+      "url": "https://yaounde.eregulations.org/procedure/81/69"
+    }
+  ],
+  "derniere_verification": "2026-07-25",
+  "notes": "Le Bulletin n°3 est délivré uniquement à la personne concernée ou à son représentant légal dans les cas prévus par la loi. Certaines juridictions peuvent connaître des délais plus longs selon la charge de travail."
+}
