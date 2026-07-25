@@ -1,50 +1,191 @@
 {
-  "demarche": "Déclaration de début d'activité",
-  "pays": "Cameroun",
-  "categorie": "Fiscalité",
+  "id": "declaration_debut_activite_impots",
+  "demarche": "Déclaration de début d'activité auprès des impôts",
+  "categorie": "Fiscalité / Obligations des contribuables",
+
+  "description": "Formalité administrative permettant à un contribuable de déclarer le commencement d'une activité économique auprès de la Direction Générale des Impôts.",
+
+  "autorite_competente": {
+    "ministere": "Ministère des Finances (MINFI)",
+    "organisme": "Direction Générale des Impôts (DGI)",
+    "service": "Centre des Impôts compétent"
+  },
+
+  "beneficiaires": [
+    "Entrepreneurs individuels",
+    "Sociétés nouvellement créées",
+    "Professionnels exerçant une activité génératrice de revenus",
+    "Contribuables soumis aux obligations fiscales"
+  ],
+
+  "conditions": [
+    "Exercer ou prévoir d'exercer une activité économique imposable",
+    "Être identifié fiscalement ou effectuer simultanément son immatriculation fiscale",
+    "Déclarer les informations relatives à l'activité"
+  ],
+
   "pieces_requises": {
-    "personne_physique": [
-      "Numéro d'Identifiant Unique (NIU) obtenu lors de l'immatriculation fiscale",
-      "Carte Nationale d'Identité ou passeport en cours de validité",
-      "Plan de localisation de l'établissement",
-      "Registre du Commerce et du Crédit Mobilier (RCCM), lorsque l'activité y est soumise",
-      "Relevé d'Identité Bancaire (RIB), lorsque requis"
+    "premiere_demande": [
+      "Formulaire de déclaration de début d'activité",
+      "Copie de la Carte Nationale d'Identité ou pièce d'identité valide",
+      "Numéro d'Identifiant Unique (NIU) lorsque déjà attribué",
+      "Document d'immatriculation de l'entreprise (RCCM ou document équivalent) lorsque applicable",
+      "Justificatif de localisation de l'activité lorsque demandé"
     ],
-    "personne_morale": [
-      "NIU",
-      "RCCM ou acte de création",
-      "Plan de localisation",
-      "Relevé d'Identité Bancaire (RIB)",
-      "Coordonnées électroniques de l'entreprise"
+
+    "renouvellement": [
+      "Non applicable pour une déclaration initiale",
+      "Mise à jour fiscale en cas de modification d'activité selon les obligations déclaratives"
+    ],
+
+    "duplicata": [
+      "Demande de réédition d'un document fiscal",
+      "Pièce d'identité du contribuable",
+      "Référence fiscale ou NIU"
+    ],
+
+    "cas_particuliers": [
+      "Documents juridiques de la société pour les personnes morales",
+      "Autorisations administratives pour certaines activités réglementées"
     ]
   },
-  "cout_officiel_fcfa": {
-    "montant": 0,
-    "devise": "FCFA",
-    "precision": "La déclaration de début d'activité, intégrée à la procédure d'immatriculation fiscale, est gratuite."
-  },
-  "lieu_depot": {
-    "demarche_en_ligne": "Portail de la Direction Générale des Impôts (DGI)",
-    "url": "https://www.impots.cm",
-    "centre_competent": "Centre des Impôts territorialement compétent après attribution du NIU."
-  },
-  "delai_moyen": "L'immatriculation doit être effectuée dans les quinze (15) jours ouvrables suivant le début de l'activité. Le NIU est généralement attribué automatiquement après validation du dossier.",
-  "base_legale": [
+
+  "documents_associes": [
     {
-      "texte": "Livre des Procédures Fiscales",
-      "reference": "Article L1"
-    }
-  ],
-  "source_officielle": [
-    {
-      "organisme": "Direction Générale des Impôts (DGI)",
-      "url": "https://www.impots.cm"
+      "nom": "Numéro d'Identifiant Unique (NIU)",
+      "obligatoire": true,
+      "description": "Identifie fiscalement le contribuable."
     },
     {
-      "organisme": "Guide officiel de l'immatriculation fiscale",
-      "url": "https://www.impots.cm/fr/immatriculation"
+      "nom": "RCCM",
+      "obligatoire": false,
+      "description": "Peut être requis pour les activités commerciales enregistrées."
     }
   ],
-  "derniere_verification": "2026-07-25",
-  "notes": "La DGI ne distingue plus une formalité autonome de « déclaration de début d'activité ». L'obligation est satisfaite par l'immatriculation fiscale en ligne, qui attribue automatiquement un NIU. Toute personne redevable d'un impôt, droit ou taxe doit accomplir cette formalité dans les quinze jours ouvrables suivant le début de son activité."
+
+  "cout": {
+    "montant": 0,
+    "devise": "XAF",
+    "variable": false,
+    "details": [
+      {
+        "libelle": "Déclaration de début d'activité fiscale",
+        "montant": 0,
+        "devise": "XAF"
+      }
+    ],
+    "precision": "La déclaration fiscale en elle-même ne constitue généralement pas une prestation payante. Des coûts peuvent cependant exister pour d'autres formalités liées à la création."
+  },
+
+  "procedure": [
+    {
+      "ordre": 1,
+      "titre": "Préparation des informations fiscales",
+      "description": "Réunir les informations sur le contribuable et l'activité."
+    },
+    {
+      "ordre": 2,
+      "titre": "Dépôt de la déclaration",
+      "description": "Effectuer la déclaration auprès du centre fiscal compétent ou par les moyens numériques disponibles."
+    },
+    {
+      "ordre": 3,
+      "titre": "Validation fiscale",
+      "description": "La DGI enregistre l'activité dans le dossier fiscal du contribuable."
+    },
+    {
+      "ordre": 4,
+      "titre": "Début des obligations fiscales",
+      "description": "Le contribuable commence à respecter ses obligations déclaratives et fiscales."
+    }
+  ],
+
+  "lieu_depot": {
+    "physique": [
+      "Centre des Impôts compétent de la DGI"
+    ],
+    "en_ligne": {
+      "disponible": true,
+      "url": "https://impots.cm/"
+    }
+  },
+
+  "delai": {
+    "officiel": null,
+    "moyen_pratique": "Variable selon le centre fiscal et la complétude du dossier. Les formalités simples peuvent être traitées rapidement."
+  },
+
+  "validite": {
+    "duree": "La déclaration concerne le début d'activité ; elle reste enregistrée dans le dossier fiscal du contribuable.",
+    "conditions": "Toute modification importante de l'activité doit être signalée selon les règles fiscales."
+  },
+
+  "paiement": {
+    "moyens": [
+      "Procédure administrative généralement gratuite"
+    ],
+    "en_ligne": true
+  },
+
+  "prise_rendez_vous": {
+    "obligatoire": false,
+    "modalite": "Variable selon le centre fiscal."
+  },
+
+  "base_legale": [
+    {
+      "texte": "Code Général des Impôts du Cameroun relatif aux obligations déclaratives des contribuables",
+      "type": "Code",
+      "reference": "",
+      "date": ""
+    }
+  ],
+
+  "sources": [
+    {
+      "organisme": "Direction Générale des Impôts du Cameroun",
+      "titre": "Obligations fiscales et services aux contribuables",
+      "url": "https://impots.cm/",
+      "date_verification": "2026-07-25"
+    }
+  ],
+
+  "faq": [
+    {
+      "question": "Pourquoi déclarer le début d'activité ?",
+      "reponse": "Cette déclaration permet à l'administration fiscale d'identifier l'activité et d'assurer le suivi des obligations fiscales."
+    },
+    {
+      "question": "Une entreprise créée au CFCE doit-elle encore déclarer son activité aux impôts ?",
+      "reponse": "Les formalités fiscales étant intégrées dans le processus de création, les obligations exactes dépendent du circuit suivi et du statut fiscal attribué."
+    },
+    {
+      "question": "La déclaration de début d'activité est-elle payante ?",
+      "reponse": "La déclaration elle-même est généralement gratuite."
+    }
+  ],
+
+  "mots_cles": [
+    "Début activité",
+    "DGI",
+    "Impôts",
+    "NIU",
+    "Fiscalité entreprise"
+  ],
+
+  "notes": "Cette formalité est parfois intégrée aux démarches de création via le CFCE. Il faut éviter de la présenter comme une procédure totalement distincte dans tous les cas.",
+
+  "statut_verification": {
+    "verifie": true,
+    "niveau_confiance": "moyen",
+    "elements_a_verifier": [
+      "Formulaire exact utilisé par la DGI en 2026",
+      "Différences entre personnes physiques et morales",
+      "Niveau d'intégration avec les procédures CFCE"
+    ]
+  },
+
+  "version": "1.0",
+
+  "derniere_verification": "2026-07-25"
 }
