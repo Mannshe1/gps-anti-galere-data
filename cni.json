@@ -1,0 +1,42 @@
+{
+  "demarche": "Carte Nationale d'Identité (CNI)",
+  "pays": "Cameroun",
+  "pieces_requises": {
+    "premiere_demande": [
+      "Copie certifiée conforme de l'acte de naissance, de l'extrait d'acte de naissance, du jugement supplétif d'acte de naissance ou du livret familial, selon le cas",
+      "Certificat de nationalité camerounaise",
+      "Pièce justificative de la profession, le cas échéant",
+      "Copie certifiée conforme de l'acte de mariage pour les femmes mariées, le cas échéant"
+    ],
+    "renouvellement_pour_peremption": [
+      "Carte Nationale d'Identité périmée",
+      "Copie certifiée conforme de l'acte de mariage pour les femmes mariées, le cas échéant",
+      "Pièce justificative de la profession, le cas échéant"
+    ]
+  },
+  "cout_officiel_fcfa": {
+    "montant": 10000,
+    "devise": "FCFA",
+    "precision": "Montant officiel incluant le droit de timbre, payable lors du pré-enrôlement en ligne."
+  },
+  "lieu_depot": {
+    "pre_enrolement": "Pré-enrôlement obligatoire en ligne sur la plateforme de la Délégation Générale à la Sûreté Nationale (DGSN).",
+    "depot_physique": "Poste d'identification (centre d'enrôlement biométrique) de la Police nationale choisi par le demandeur lors du pré-enrôlement."
+  },
+  "delai_moyen": "En principe 48 heures après l'enrôlement physique lorsque le dossier est complet et validé ; des délais plus longs peuvent toutefois être constatés selon les centres et les contraintes techniques.",
+  "source_officielle": [
+    {
+      "titre": "Délégation Générale à la Sûreté Nationale (DGSN) – Procédure d'obtention des titres identitaires",
+      "reference": "https://www.dgsn.cm/"
+    },
+    {
+      "titre": "Plaquette officielle DGSN « Procédure d'obtention des titres » (mise à jour 2025)",
+      "reference": "https://www.dgsn.cm/wp-content/uploads/2025/05/Plaquette-20-Mai-2025-FR-ok.pdf"
+    },
+    {
+      "titre": "Décret n°2016/375 du 04 août 2016 fixant les caractéristiques et les modalités d'établissement et de délivrance de la Carte Nationale d'Identité"
+    }
+  ],
+  "derniere_verification": "2026-07-25",
+  "notes": "Les exigences ci-dessus correspondent aux informations publiées par la DGSN et au décret applicable. Le délai de 48 heures est l'objectif annoncé par l'administration dans le cadre du nouveau système biométrique. En pratique, il peut varier selon la disponibilité technique, l'affluence ou des vérifications administratives supplémentaires."
+}
