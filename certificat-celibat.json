@@ -1,0 +1,39 @@
+{
+  "demarche": "Certificat de célibat",
+  "pays": "Cameroun",
+  "categorie": "État civil",
+  "pieces_requises": {
+    "demande_standard": [
+      "Demande adressée à l'Officier d'état civil (sur le formulaire ou modèle de la mairie)",
+      "Photocopie de la Carte Nationale d'Identité ou de l'acte de naissance",
+      "Présence de deux témoins majeurs munis de leurs Cartes Nationales d'Identité",
+      "Déclaration sur l'honneur attestant que le demandeur n'a jamais contracté mariage"
+    ]
+  },
+  "cout_officiel_fcfa": {
+    "montant": null,
+    "devise": "FCFA",
+    "precision": "Aucun tarif national unique n'est fixé. Les frais (timbre fiscal, timbre communal ou droits communaux) varient selon la commune."
+  },
+  "lieu_depot": {
+    "organisme": "Service de l'état civil",
+    "etablissement": "Mairie (Commune d'arrondissement) du lieu de résidence ou de la commune compétente."
+  },
+  "delai_moyen": "Le certificat est généralement délivré le jour même lorsque le dossier est complet ; dans certaines communes, le délai peut aller jusqu'à 1 à 3 jours ouvrables.",
+  "base_legale": [
+    "Ordonnance n°81-02 du 29 juin 1981 portant organisation de l'état civil au Cameroun.",
+    "Procédures administratives des communes camerounaises."
+  ],
+  "source_officielle": [
+    {
+      "organisme": "eRegulations Cameroun - Service de l'état civil",
+      "url": "https://yaounde.eregulations.org/procedure/print/175/69/step/383?l=fr&showCertification=false&showRecourses=true"
+    },
+    {
+      "organisme": "Commune de Douala Ier",
+      "url": "https://mairiedouala1.cm/wp-content/uploads/2016/05/CERTIFICAT-DOMICILE-ET-CELIBAT.pdf"
+    }
+  ],
+  "derniere_verification": "2026-07-25",
+  "notes": "La présence de deux témoins majeurs est exigée par plusieurs communes, notamment dans la procédure publiée sur eRegulations Cameroun. Les montants des timbres et droits communaux ne sont pas uniformes au niveau national ; ils peuvent varier d'une commune à l'autre. Aucun coût officiel national unique n'a donc été renseigné afin d'éviter toute information inexacte."
+}
