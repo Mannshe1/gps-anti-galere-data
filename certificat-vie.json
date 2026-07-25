@@ -1,93 +1,183 @@
 {
-  "id": "certificat_de_vie",
+  "id": "certificat_vie",
   "demarche": "Certificat de vie (preuve d'existence)",
-  "pays": "Cameroun",
-  "categorie": "État civil",
-  "ministere": {
-    "nom": "Ministère de la Décentralisation et du Développement Local",
-    "sigle": "MINDDEVEL"
+  "categorie": "État civil / Administration",
+
+  "description": "Document administratif attestant qu'une personne est vivante au moment de sa délivrance.",
+
+  "autorite_competente": {
+    "ministere": "Ministère de la Décentralisation et du Développement Local (MINDDEVEL)",
+    "organisme": "Commune / Centre d'état civil compétent",
+    "service": "Officier d'état civil ou service administratif habilité"
   },
-  "organisme_competent": {
-    "nom": "Mairie / Service de l'état civil",
-    "type": "Officier d'état civil"
-  },
-  "description": "Document administratif attestant qu'une personne est vivante à la date de délivrance.",
+
   "beneficiaires": [
-    "Toute personne ayant besoin de justifier son existence auprès d'une administration, d'une banque ou d'un organisme."
+    "Toute personne ayant besoin de justifier son existence",
+    "Retraités et bénéficiaires de pensions",
+    "Personnes concernées par des procédures administratives ou financières"
   ],
+
+  "conditions": [
+    "La personne concernée doit généralement se présenter physiquement",
+    "Présenter une pièce d'identité valide",
+    "Être identifiable dans les documents administratifs"
+  ],
+
   "pieces_requises": {
-    "demande_standard": [
-      "Présence physique du demandeur devant l'Officier d'état civil",
-      "Carte Nationale d'Identité (CNI) ou autre pièce d'identité valide",
-      "Photocopie de la pièce d'identité, lorsque demandée",
-      "Photographie d'identité, selon la pratique de certaines communes"
+    "premiere_demande": [
+      "Demande de certificat de vie",
+      "Carte Nationale d'Identité ou pièce d'identité valide",
+      "Présence physique du demandeur lorsque exigée"
     ],
-    "cas_particulier_retraite": [
+
+    "renouvellement": [
+      "Nouvelle demande",
       "Pièce d'identité valide",
-      "Référence du dossier de pension ou document demandé par l'organisme bénéficiaire, lorsque nécessaire"
+      "Présence du bénéficiaire"
+    ],
+
+    "duplicata": [
+      "Demande de nouvelle délivrance",
+      "Pièce d'identité"
+    ],
+
+    "cas_particuliers": [
+      "Certificat médical ou justificatif spécifique dans certains cas particuliers",
+      "Procuration ou procédure spéciale lorsque la personne ne peut pas se déplacer, selon l'autorité compétente"
     ]
   },
+
+  "documents_associes": [
+    {
+      "nom": "Carte Nationale d'Identité",
+      "obligatoire": true,
+      "description": "Permet l'identification de la personne."
+    },
+    {
+      "nom": "Photo d'identité",
+      "obligatoire": false,
+      "description": "Peut être demandée par certaines administrations."
+    }
+  ],
+
   "cout": {
     "montant": null,
     "devise": "XAF",
     "variable": true,
     "details": [],
-    "precision": "Les frais administratifs éventuels et droits communaux varient selon la commune. Aucun tarif national unique n'a été confirmé."
+    "precision": "Les frais éventuels sont fixés par les communes ou organismes compétents. Aucun tarif national unique confirmé n'est renseigné."
   },
+
   "procedure": [
     {
       "ordre": 1,
       "titre": "Présentation du demandeur",
-      "description": "Le demandeur se présente au service d'état civil."
+      "description": "La personne concernée se présente auprès du service compétent avec sa pièce d'identité."
     },
     {
       "ordre": 2,
-      "titre": "Vérification d'identité",
-      "description": "L'Officier d'état civil vérifie l'identité du demandeur."
+      "titre": "Vérification de l'identité",
+      "description": "L'autorité vérifie l'identité du demandeur."
     },
     {
       "ordre": 3,
-      "titre": "Délivrance du certificat",
-      "description": "Le certificat est établi et remis au demandeur."
+      "titre": "Établissement du certificat",
+      "description": "Le certificat de vie est établi et remis au demandeur."
     }
   ],
+
   "lieu_depot": {
     "physique": [
-      "Mairie du lieu de résidence ou mairie compétente selon les règles locales"
+      "Mairie ou centre d'état civil compétent",
+      "Service administratif habilité selon l'organisme demandeur"
     ],
     "en_ligne": {
       "disponible": false,
       "url": null
     }
   },
+
   "delai": {
     "officiel": null,
-    "constate": "Souvent délivré le jour même lorsque le demandeur est présent et que les informations sont vérifiées."
+    "moyen_pratique": "Généralement délivré le jour même lorsque la personne est présente et que le dossier est complet."
   },
+
   "validite": {
-    "duree": "Variable selon l'organisme qui exige le document."
+    "duree": "Courte durée selon l'organisme qui demande le document.",
+    "conditions": "De nombreux organismes exigent un certificat récent."
   },
+
+  "paiement": {
+    "moyens": [
+      "Selon les modalités de la commune ou du service concerné"
+    ],
+    "en_ligne": false
+  },
+
+  "prise_rendez_vous": {
+    "obligatoire": false,
+    "modalite": "Variable selon l'administration concernée."
+  },
+
   "base_legale": [
     {
-      "texte": "Ordonnance n°81-02 du 29 juin 1981 portant organisation de l'état civil",
-      "type": "Ordonnance"
+      "texte": "Loi n°2024/016 du 23 décembre 2024 portant organisation du système d'état civil au Cameroun",
+      "type": "Loi",
+      "reference": "2024/016",
+      "date": "2024-12-23"
     },
     {
-      "texte": "Règles administratives relatives aux actes délivrés par les officiers d'état civil",
-      "type": "Procédure administrative"
+      "texte": "Textes relatifs aux compétences des officiers d'état civil",
+      "type": "Réglementation administrative",
+      "reference": "",
+      "date": ""
     }
   ],
-  "source_officielle": [
+
+  "sources": [
     {
-      "organisme": "eRegulations Cameroun",
-      "url": "https://yaounde.eregulations.org/",
-      "date_consultation": "2026-07-25"
+      "organisme": "Ministère de la Décentralisation et du Développement Local (MINDDEVEL)",
+      "titre": "Organisation des services d'état civil",
+      "url": "https://minddevel.gov.cm/",
+      "date_verification": "2026-07-25"
+    }
+  ],
+
+  "faq": [
+    {
+      "question": "Où obtenir un certificat de vie ?",
+      "reponse": "Auprès de la mairie ou du service administratif habilité."
     },
     {
-      "organisme": "Collectivités territoriales camerounaises - Services d'état civil",
-      "type": "Source administrative locale"
+      "question": "La présence physique est-elle obligatoire ?",
+      "reponse": "Elle est généralement demandée afin que l'autorité puisse constater l'existence de la personne."
+    },
+    {
+      "question": "Quelle est la durée de validité d'un certificat de vie ?",
+      "reponse": "Elle dépend de l'organisme qui l'exige."
     }
   ],
-  "derniere_verification": "2026-07-25",
-  "notes": "Le certificat de vie ne possède pas un tarif national unique publié. Les exigences peuvent varier selon la commune et selon l'organisme qui demande le document (CNPS, banque, administration, ambassade, etc.). La présence physique du demandeur est généralement exigée afin de constater l'existence de la personne."
+
+  "mots_cles": [
+    "Certificat de vie",
+    "Certificat d'existence",
+    "État civil",
+    "Preuve d'existence",
+    "Mairie"
+  ],
+
+  "notes": "Le certificat de vie n'a pas un tarif national unique confirmé. Les exigences peuvent varier selon l'organisme qui le demande (CNPS, banque, administration étrangère, assurance, etc.).",
+
+  "statut_verification": {
+    "verifie": true,
+    "niveau_confiance": "moyen",
+    "elements_a_verifier": [
+      "Tarifs communaux",
+      "Procédures particulières pour les bénéficiaires vivant à l'étranger"
+    ]
+  },
+
+  "version": "1.0",
+
+  "derniere_verification": "2026-07-25"
 }
