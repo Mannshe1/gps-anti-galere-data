@@ -1,49 +1,181 @@
 {
-  "demarche": "Casier judiciaire (Bulletin n°3)",
-  "pays": "Cameroun",
-  "categorie": "Justice",
+  "id": "casier_judiciaire_bulletin3",
+  "demarche": "Casier judiciaire - Bulletin n°3",
+  "categorie": "Justice / Documents judiciaires",
+
+  "description": "Document officiel indiquant les condamnations pénales inscrites au casier judiciaire d'une personne, selon les règles prévues par la législation camerounaise.",
+
+  "autorite_competente": {
+    "ministere": "Ministère de la Justice",
+    "organisme": "Tribunal de Première Instance compétent",
+    "service": "Greffe du Tribunal"
+  },
+
+  "beneficiaires": [
+    "Toute personne physique souhaitant obtenir son bulletin n°3",
+    "Représentant légal dans les cas prévus par la loi"
+  ],
+
+  "conditions": [
+    "Être identifié par une pièce officielle",
+    "Déposer la demande auprès de la juridiction compétente",
+    "Fournir les informations nécessaires à la recherche judiciaire"
+  ],
+
   "pieces_requises": {
-    "demande_standard": [
-      "Demande timbrée adressée au Président du Tribunal compétent",
-      "Original de la Carte Nationale d'Identité ou copie certifiée conforme",
-      "À défaut, original ou copie certifiée conforme de l'acte de naissance",
-      "Deux timbres fiscaux de 1 000 FCFA chacun (un pour la demande et un pour le bulletin)"
+    "premiere_demande": [
+      "Demande de bulletin n°3 de casier judiciaire",
+      "Copie de la Carte Nationale d'Identité ou pièce d'identité valide",
+      "Acte de naissance ou document d'état civil lorsque requis",
+      "Informations complètes sur l'identité du demandeur"
     ],
-    "ressortissant_etranger": [
-      "Demande timbrée",
-      "Passeport ou titre d'identité valide",
-      "Document justifiant le séjour au Cameroun, le cas échéant"
+
+    "renouvellement": [
+      "Nouvelle demande de bulletin n°3",
+      "Pièce d'identité valide"
+    ],
+
+    "duplicata": [
+      "Demande de délivrance d'un nouveau bulletin",
+      "Pièce d'identité du demandeur"
+    ],
+
+    "cas_particuliers": [
+      "Mandat ou procuration lorsque la demande est faite par un tiers autorisé",
+      "Documents complémentaires selon les exigences du tribunal"
     ]
   },
-  "cout_officiel_fcfa": {
-    "montant": 2100,
-    "devise": "FCFA",
-    "detail": {
-      "timbre_sur_la_demande": 1000,
-      "timbre_sur_le_bulletin": 1000,
-      "frais_de_recherche": 100
-    },
-    "precision": "Le coût officiel est composé de deux timbres fiscaux de 1 000 FCFA et de 100 FCFA de frais de recherche."
-  },
-  "lieu_depot": {
-    "citoyen_camerounais": "Greffe du Tribunal de Première Instance du lieu de naissance.",
-    "cas_particuliers": "Pour certaines situations particulières (notamment certains ressortissants étrangers), la demande est déposée auprès du Ministère de la Justice (Direction des Affaires Pénales et des Grâces)."
-  },
-  "delai_moyen": "24 heures lorsque le dossier est complet ; il peut atteindre 72 heures selon l'affluence ou la juridiction.",
-  "base_legale": [
-    "Loi n°2005/007 du 27 juillet 2005 portant Code de procédure pénale (articles 581 et suivants).",
-    "Procédure de délivrance du casier judiciaire publiée par le Ministère de la Justice."
-  ],
-  "source_officielle": [
+
+  "documents_associes": [
     {
-      "organisme": "Ministère de la Justice (MINJUSTICE)",
-      "url": "https://minjustice.gov.cm/index.php/fr/services-aux-usagers/procedures-usuelles/331-procedure-de-delivrance-de-casier-judiciaire"
+      "nom": "Carte Nationale d'Identité",
+      "obligatoire": true,
+      "description": "Permet l'identification du demandeur."
     },
     {
-      "organisme": "eRegulations Cameroun",
-      "url": "https://yaounde.eregulations.org/procedure/81/69"
+      "nom": "Acte de naissance",
+      "obligatoire": false,
+      "description": "Peut être demandé pour confirmer les informations d'état civil."
     }
   ],
-  "derniere_verification": "2026-07-25",
-  "notes": "Le Bulletin n°3 est délivré uniquement à la personne concernée ou à son représentant légal dans les cas prévus par la loi. Certaines juridictions peuvent connaître des délais plus longs selon la charge de travail."
+
+  "cout": {
+    "montant": null,
+    "devise": "XAF",
+    "variable": true,
+    "details": [],
+    "precision": "Les frais de délivrance du bulletin n°3 peuvent dépendre des droits applicables auprès de la juridiction compétente. Aucun tarif national unique confirmé n'est renseigné ici."
+  },
+
+  "procedure": [
+    {
+      "ordre": 1,
+      "titre": "Préparation de la demande",
+      "description": "Réunir les pièces nécessaires et identifier le tribunal compétent."
+    },
+    {
+      "ordre": 2,
+      "titre": "Dépôt au greffe",
+      "description": "Déposer la demande auprès du greffe du tribunal compétent."
+    },
+    {
+      "ordre": 3,
+      "titre": "Vérification judiciaire",
+      "description": "Le service compétent procède aux vérifications dans les fichiers judiciaires."
+    },
+    {
+      "ordre": 4,
+      "titre": "Retrait du bulletin",
+      "description": "Le bulletin n°3 est remis au demandeur ou à son représentant autorisé."
+    }
+  ],
+
+  "lieu_depot": {
+    "physique": [
+      "Greffe du Tribunal de Première Instance compétent",
+      "Juridiction compétente selon le lieu de naissance ou les règles applicables"
+    ],
+    "en_ligne": {
+      "disponible": false,
+      "url": null
+    }
+  },
+
+  "delai": {
+    "officiel": null,
+    "moyen_pratique": "Variable selon le tribunal, la disponibilité des informations judiciaires et le volume des demandes."
+  },
+
+  "validite": {
+    "duree": "Variable selon l'administration ou l'organisme qui exige le document.",
+    "conditions": "Certains organismes demandent un bulletin récent."
+  },
+
+  "paiement": {
+    "moyens": [
+      "Selon les modalités du greffe ou de la juridiction compétente"
+    ],
+    "en_ligne": false
+  },
+
+  "prise_rendez_vous": {
+    "obligatoire": false,
+    "modalite": "Dépend du fonctionnement du tribunal concerné."
+  },
+
+  "base_legale": [
+    {
+      "texte": "Code de procédure pénale camerounais relatif au casier judiciaire",
+      "type": "Code",
+      "reference": "",
+      "date": ""
+    }
+  ],
+
+  "sources": [
+    {
+      "organisme": "Ministère de la Justice du Cameroun",
+      "titre": "Organisation judiciaire et services des greffes",
+      "url": "https://www.minjustice.gov.cm/",
+      "date_verification": "2026-07-25"
+    }
+  ],
+
+  "faq": [
+    {
+      "question": "Où demander un bulletin n°3 ?",
+      "reponse": "Auprès du greffe du tribunal compétent."
+    },
+    {
+      "question": "Le bulletin n°3 peut-il être demandé par une autre personne ?",
+      "reponse": "Oui, dans certains cas avec une autorisation ou un mandat conforme."
+    },
+    {
+      "question": "Combien de temps le bulletin n°3 reste-t-il valable ?",
+      "reponse": "La durée dépend généralement de l'organisme qui le demande."
+    }
+  ],
+
+  "mots_cles": [
+    "Casier judiciaire",
+    "Bulletin numéro 3",
+    "Justice",
+    "Tribunal",
+    "Greffe"
+  ],
+
+  "notes": "Les procédures pratiques peuvent varier selon les tribunaux. Le coût exact doit être confirmé auprès du greffe compétent avant intégration définitive dans une application destinée au public.",
+
+  "statut_verification": {
+    "verifie": true,
+    "niveau_confiance": "moyen",
+    "elements_a_verifier": [
+      "Tarification exacte appliquée par les juridictions",
+      "Possibilité d'une procédure numérique nationale"
+    ]
+  },
+
+  "version": "1.0",
+
+  "derniere_verification": "2026-07-25"
 }
