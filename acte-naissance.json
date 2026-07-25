@@ -1,42 +1,187 @@
 {
-  "demarche": "Copie certifiée conforme de l'acte de naissance",
-  "pays": "Cameroun",
-  "categorie": "État civil",
+  "id": "acte_naissance",
+  "demarche": "Acte de naissance (copie intégrale / extrait)",
+  "categorie": "État civil / Identité",
+
+  "description": "Document d'état civil attestant la naissance d'une personne, contenant les informations relatives à son identité, sa filiation et les mentions prévues par la réglementation.",
+
+  "autorite_competente": {
+    "ministere": "Ministère de la Décentralisation et du Développement Local (MINDDEVEL)",
+    "organisme": "Commune / Service de l'état civil",
+    "service": "Bureau d'état civil"
+  },
+
+  "beneficiaires": [
+    "Personne concernée par l'acte",
+    "Parent ou représentant légal pour un mineur",
+    "Mandataire autorisé selon les règles de la commune"
+  ],
+
+  "conditions": [
+    "La naissance doit avoir été enregistrée dans un centre d'état civil camerounais",
+    "Fournir les informations permettant de retrouver l'acte dans les registres"
+  ],
+
   "pieces_requises": {
-    "demande_par_le_titulaire": [
-      "Original ou références de l'acte de naissance inscrit dans les registres de la commune",
-      "Pièce d'identité valide du demandeur"
+    "premiere_demande": [
+      "Informations d'identification du titulaire de l'acte",
+      "Pièce d'identité du demandeur lorsqu'elle est exigée",
+      "Justificatif du lien de parenté pour une demande concernant un mineur"
     ],
-    "demande_par_un_representant": [
-      "Pièce d'identité du représentant",
-      "Références de l'acte de naissance",
-      "Procuration ou document justifiant la qualité du représentant, lorsque exigé par l'officier d'état civil"
+
+    "renouvellement": [
+      "Ancien exemplaire de l'acte lorsque disponible",
+      "Pièce d'identité du demandeur"
+    ],
+
+    "duplicata": [
+      "Demande de nouvelle copie auprès du centre d'état civil ayant enregistré la naissance",
+      "Pièce d'identité du demandeur",
+      "Informations permettant la recherche dans les registres"
+    ],
+
+    "cas_particuliers": [
+      "Jugement supplétif en cas d'absence d'acte de naissance",
+      "Documents judiciaires en cas de rectification ou modification d'état civil"
     ]
   },
-  "cout_officiel_fcfa": {
-    "montant": null,
-    "devise": "FCFA",
-    "precision": "Les droits applicables (timbre fiscal, timbre communal ou autres frais) peuvent varier selon la commune. Aucun tarif national unique en vigueur n'a pu être confirmé."
-  },
-  "lieu_depot": {
-    "organisme": "Service de l'état civil",
-    "etablissement": "Mairie (Commune) où l'acte de naissance est conservé dans les registres d'état civil."
-  },
-  "delai_moyen": "Le document est généralement délivré le jour même lorsque l'acte est disponible dans les registres ; dans certaines communes, le délai peut aller de 1 à 3 jours ouvrables.",
-  "base_legale": [
-    "Ordonnance n°81-02 du 29 juin 1981 portant organisation de l'état civil au Cameroun, modifiée et complétée.",
-    "Textes d'application relatifs à l'état civil."
-  ],
-  "source_officielle": [
+
+  "documents_associes": [
     {
-      "organisme": "Communauté Urbaine d'Edéa",
-      "url": "https://www.edea.cm/ova_doc/procedure-pour-acte-de-naissance/"
+      "nom": "Carte Nationale d'Identité",
+      "obligatoire": false,
+      "description": "Peut être demandée pour identifier le demandeur majeur."
     },
     {
-      "organisme": "Commune d'Arrondissement de Yaoundé II",
-      "url": "https://yaounde2.cm/ova_doc/procedure-pour-acte-de-naissance/"
+      "nom": "Jugement supplétif d'acte de naissance",
+      "obligatoire": false,
+      "description": "Nécessaire lorsque la naissance n'a jamais été enregistrée."
     }
   ],
-  "derniere_verification": "2026-07-25",
-  "notes": "Le coût n'est pas uniforme sur l'ensemble du territoire. Les communes appliquent des droits communaux et fiscaux qui peuvent différer. En l'absence d'un texte national fixant un tarif unique applicable en 2026, aucun montant officiel unique n'est renseigné afin d'éviter toute information inexacte."
+
+  "cout": {
+    "montant": null,
+    "devise": "XAF",
+    "variable": true,
+    "details": [],
+    "precision": "Les frais de délivrance des copies d'actes d'état civil peuvent varier selon les communes. Aucun tarif national unique n'a été confirmé."
+  },
+
+  "procedure": [
+    {
+      "ordre": 1,
+      "titre": "Identification du centre d'état civil",
+      "description": "S'adresser au centre où la naissance a été enregistrée."
+    },
+    {
+      "ordre": 2,
+      "titre": "Dépôt de la demande",
+      "description": "Fournir les informations nécessaires à la recherche de l'acte."
+    },
+    {
+      "ordre": 3,
+      "titre": "Vérification des registres",
+      "description": "L'officier d'état civil vérifie l'inscription dans les registres."
+    },
+    {
+      "ordre": 4,
+      "titre": "Délivrance de la copie",
+      "description": "La copie intégrale ou l'extrait est établi et remis au demandeur."
+    }
+  ],
+
+  "lieu_depot": {
+    "physique": [
+      "Centre d'état civil ayant enregistré la naissance",
+      "Mairie compétente"
+    ],
+    "en_ligne": {
+      "disponible": false,
+      "url": null
+    }
+  },
+
+  "delai": {
+    "officiel": null,
+    "moyen_pratique": "Souvent délivré le même jour lorsque l'acte est disponible dans les registres."
+  },
+
+  "validite": {
+    "duree": "Le document n'expire pas juridiquement, mais certaines administrations peuvent exiger une copie récente.",
+    "conditions": "La durée d'acceptation dépend de l'organisme demandeur."
+  },
+
+  "paiement": {
+    "moyens": [
+      "Paiement selon les modalités de la commune concernée"
+    ],
+    "en_ligne": false
+  },
+
+  "prise_rendez_vous": {
+    "obligatoire": false,
+    "modalite": "Variable selon la commune."
+  },
+
+  "base_legale": [
+    {
+      "texte": "Ordonnance n°81-02 du 29 juin 1981 portant organisation de l'état civil au Cameroun",
+      "type": "Ordonnance",
+      "reference": "81-02",
+      "date": "1981-06-29"
+    },
+    {
+      "texte": "Loi n°2024/016 du 23 décembre 2024 portant organisation du système d'état civil au Cameroun",
+      "type": "Loi",
+      "reference": "2024/016",
+      "date": "2024-12-23"
+    }
+  ],
+
+  "sources": [
+    {
+      "organisme": "Ministère de la Décentralisation et du Développement Local (MINDDEVEL)",
+      "titre": "Organisation de l'état civil",
+      "url": "https://minddevel.gov.cm/",
+      "date_verification": "2026-07-25"
+    }
+  ],
+
+  "faq": [
+    {
+      "question": "Où demander une copie d'acte de naissance ?",
+      "reponse": "Au centre d'état civil ou à la mairie où la naissance a été enregistrée."
+    },
+    {
+      "question": "Que faire si aucune naissance n'a été enregistrée ?",
+      "reponse": "Une procédure judiciaire de jugement supplétif peut être nécessaire."
+    },
+    {
+      "question": "L'acte de naissance expire-t-il ?",
+      "reponse": "L'acte original ne disparaît pas, mais certaines administrations demandent une copie récente."
+    }
+  ],
+
+  "mots_cles": [
+    "Acte de naissance",
+    "Copie intégrale",
+    "Extrait de naissance",
+    "État civil",
+    "Jugement supplétif"
+  ],
+
+  "notes": "Les tarifs et délais peuvent varier selon les communes. La réforme récente de l'état civil peut entraîner des changements dans les procédures locales. Les demandes doivent être faites auprès du centre compétent ayant enregistré l'événement.",
+
+  "statut_verification": {
+    "verifie": true,
+    "niveau_confiance": "moyen",
+    "elements_a_verifier": [
+      "Tarifs exacts appliqués par chaque commune",
+      "Disponibilité éventuelle de services numériques communaux"
+    ]
+  },
+
+  "version": "1.0",
+
+  "derniere_verification": "2026-07-25"
 }
