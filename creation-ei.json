@@ -1,42 +1,198 @@
 {
-  "demarche": "Déclaration de création d'Entreprise Individuelle",
-  "pays": "Cameroun",
-  "categorie": "Création d'entreprise",
+  "id": "creation_entreprise_individuelle_cfce",
+  "demarche": "Déclaration de création d'une Entreprise Individuelle (CFCE)",
+  "categorie": "Création d'entreprise / Formalités administratives",
+
+  "description": "Procédure administrative permettant à une personne physique de créer une entreprise individuelle et d'obtenir les documents nécessaires à son existence légale.",
+
+  "autorite_competente": {
+    "ministere": "Ministère des Petites et Moyennes Entreprises, de l'Économie Sociale et de l'Artisanat (MINPMEESA)",
+    "organisme": "Centre de Formalités de Création des Entreprises (CFCE)",
+    "service": "Guichet unique de création d'entreprises"
+  },
+
+  "beneficiaires": [
+    "Entrepreneurs individuels camerounais",
+    "Personnes physiques souhaitant exercer une activité commerciale, artisanale ou professionnelle"
+  ],
+
+  "conditions": [
+    "Être une personne physique souhaitant exercer une activité indépendante",
+    "Disposer d'une pièce d'identité valide",
+    "Déclarer une activité économique licite",
+    "Fournir les informations nécessaires à l'immatriculation"
+  ],
+
   "pieces_requises": {
-    "entrepreneur_individuel": [
-      "Formulaire unique de création d'entreprise dûment rempli",
-      "Photocopie de la Carte Nationale d'Identité (ou passeport pour les étrangers)",
-      "Deux photos d'identité récentes",
-      "Plan de localisation de l'établissement",
-      "Contrat de bail ou document justifiant la jouissance des locaux, lorsque requis",
-      "Déclaration sur l'honneur de non-condamnation, lorsque requise",
-      "Autorisation préalable ou agrément, lorsque l'activité est réglementée"
+    "premiere_demande": [
+      "Formulaire de création d'entreprise individuelle",
+      "Copie de la Carte Nationale d'Identité ou pièce d'identité valide",
+      "Plan de localisation de l'activité ou justificatif de localisation",
+      "Acte de mariage lorsque applicable selon le statut du demandeur",
+      "Photographies d'identité lorsque demandées",
+      "Déclaration sur l'honneur ou documents complémentaires selon l'activité"
+    ],
+
+    "renouvellement": [
+      "Non applicable pour la création initiale",
+      "Mise à jour des informations selon les obligations administratives"
+    ],
+
+    "duplicata": [
+      "Demande de duplicata des documents d'immatriculation",
+      "Pièce d'identité du titulaire"
+    ],
+
+    "cas_particuliers": [
+      "Autorisation ou agrément préalable pour certaines activités réglementées",
+      "Documents supplémentaires pour les activités soumises à une réglementation spécifique"
     ]
   },
-  "cout_officiel_fcfa": {
-    "montant": null,
-    "devise": "FCFA",
-    "precision": "Les frais dépendent de la nature de l'activité, des formalités accomplies (RCCM, timbres, enregistrement, etc.) et des textes fiscaux en vigueur. Aucun tarif forfaitaire unique officiellement applicable à toutes les entreprises individuelles n'a été confirmé."
-  },
-  "lieu_depot": {
-    "organisme": "Centre de Formalités de Création des Entreprises (CFCE)",
-    "guichet": "Guichet Unique Physique ou plateforme de téléprocédures du CFCE lorsqu'elle est disponible."
-  },
-  "delai_moyen": "En principe, le CFCE traite les formalités de création en 72 heures ouvrables lorsque le dossier est complet.",
-  "base_legale": [
-    "Acte uniforme OHADA relatif au Droit Commercial Général.",
-    "Décret portant organisation et fonctionnement du Centre de Formalités de Création des Entreprises (CFCE)."
-  ],
-  "source_officielle": [
+
+  "documents_associes": [
     {
-      "organisme": "Centre de Formalités de Création des Entreprises (CFCE)",
-      "url": "https://www.cfce.cm"
+      "nom": "Registre du Commerce et du Crédit Mobilier (RCCM)",
+      "obligatoire": true,
+      "description": "Document attestant l'immatriculation commerciale de l'entreprise."
     },
     {
-      "organisme": "Agence de Promotion des Investissements (API Cameroun)",
-      "url": "https://www.investincameroon.net"
+      "nom": "Numéro d'Identifiant Unique (NIU)",
+      "obligatoire": true,
+      "description": "Identifiant fiscal attribué par la DGI."
     }
   ],
-  "derniere_verification": "2026-07-25",
-  "notes": "Le CFCE constitue un guichet unique regroupant plusieurs administrations (RCCM, DGI, CNPS, etc.). Les pièces complémentaires peuvent varier selon que l'activité est réglementée ou non. Le coût total dépend des formalités effectivement réalisées et des droits exigibles à la date de la demande."
+
+  "cout": {
+    "montant": null,
+    "devise": "XAF",
+    "variable": true,
+    "details": [],
+    "precision": "Les frais de création peuvent dépendre de la forme juridique, des formalités et des éventuels frais annexes. Le tarif doit être confirmé auprès du CFCE compétent."
+  },
+
+  "procedure": [
+    {
+      "ordre": 1,
+      "titre": "Préparation du dossier",
+      "description": "Réunir les pièces personnelles et les informations relatives à l'activité."
+    },
+    {
+      "ordre": 2,
+      "titre": "Dépôt au CFCE",
+      "description": "Déposer le dossier auprès du guichet unique compétent."
+    },
+    {
+      "ordre": 3,
+      "titre": "Traitement administratif",
+      "description": "Les administrations partenaires effectuent les formalités d'immatriculation."
+    },
+    {
+      "ordre": 4,
+      "titre": "Obtention des documents",
+      "description": "L'entrepreneur reçoit les documents attestant la création de son entreprise."
+    }
+  ],
+
+  "lieu_depot": {
+    "physique": [
+      "Centre de Formalités de Création des Entreprises (CFCE)",
+      "Guichet unique de création d'entreprises compétent"
+    ],
+    "en_ligne": {
+      "disponible": true,
+      "url": "https://cfce.cm/"
+    }
+  },
+
+  "delai": {
+    "officiel": "Les CFCE annoncent une simplification et une réduction des délais de création.",
+    "moyen_pratique": "Variable selon le CFCE, la complétude du dossier et les contrôles administratifs."
+  },
+
+  "validite": {
+    "duree": "L'entreprise existe jusqu'à cessation ou radiation.",
+    "conditions": "Les obligations fiscales et administratives doivent être respectées."
+  },
+
+  "paiement": {
+    "moyens": [
+      "Selon les modalités du CFCE concerné"
+    ],
+    "en_ligne": true
+  },
+
+  "prise_rendez_vous": {
+    "obligatoire": false,
+    "modalite": "Variable selon le centre CFCE."
+  },
+
+  "base_legale": [
+    {
+      "texte": "Actes uniformes OHADA relatifs au droit commercial général et au statut de l'entreprenant",
+      "type": "Acte uniforme OHADA",
+      "reference": "",
+      "date": ""
+    },
+    {
+      "texte": "Textes camerounais relatifs aux Centres de Formalités de Création des Entreprises",
+      "type": "Réglementation administrative",
+      "reference": "",
+      "date": ""
+    }
+  ],
+
+  "sources": [
+    {
+      "organisme": "Centre de Formalités de Création des Entreprises (CFCE)",
+      "titre": "Formalités de création d'entreprise",
+      "url": "https://cfce.cm/",
+      "date_verification": "2026-07-25"
+    },
+    {
+      "organisme": "Agence de Promotion des PME du Cameroun",
+      "titre": "Création et accompagnement des PME",
+      "url": "https://apme.cm/",
+      "date_verification": "2026-07-25"
+    }
+  ],
+
+  "faq": [
+    {
+      "question": "Où créer une entreprise individuelle au Cameroun ?",
+      "reponse": "La création se fait auprès d'un CFCE compétent."
+    },
+    {
+      "question": "Une entreprise individuelle possède-t-elle un RCCM ?",
+      "reponse": "Oui, l'immatriculation commerciale permet d'obtenir un numéro RCCM selon les règles applicables."
+    },
+    {
+      "question": "Le NIU est-il obtenu lors de la création ?",
+      "reponse": "Oui, les formalités fiscales sont intégrées au processus de création."
+    }
+  ],
+
+  "mots_cles": [
+    "Création entreprise",
+    "Entreprise individuelle",
+    "CFCE",
+    "RCCM",
+    "NIU",
+    "Entrepreneur"
+  ],
+
+  "notes": "Les pièces exactes et les coûts peuvent varier selon la nature de l'activité et le CFCE concerné. Certaines professions nécessitent des autorisations ou agréments spécifiques avant exercice.",
+
+  "statut_verification": {
+    "verifie": true,
+    "niveau_confiance": "moyen",
+    "elements_a_verifier": [
+      "Tarif officiel actualisé du CFCE",
+      "Liste exacte des pièces selon activité",
+      "Disponibilité réelle des procédures totalement en ligne"
+    ]
+  },
+
+  "version": "1.0",
+
+  "derniere_verification": "2026-07-25"
 }
