@@ -1,0 +1,55 @@
+{
+  "demarche": "Passeport ordinaire biométrique",
+  "pays": "Cameroun",
+  "categorie": "Titre de voyage",
+  "pieces_requises": {
+    "premiere_demande_majeur": [
+      "Récépissé de pré-enrôlement généré sur la plateforme PASSCAM",
+      "Photocopie certifiée conforme de l'acte de naissance",
+      "Carte Nationale d'Identité (CNI) valide",
+      "Justificatif de profession, le cas échéant",
+      "Acte de mariage ou document justificatif en cas de changement de nom (le cas échéant)"
+    ],
+    "renouvellement": [
+      "Récépissé de pré-enrôlement",
+      "Ancien passeport",
+      "Carte Nationale d'Identité (CNI) valide",
+      "Justificatif de profession, le cas échéant",
+      "Document justifiant le changement d'état civil, le cas échéant"
+    ],
+    "mineur": [
+      "Récépissé de pré-enrôlement",
+      "Photocopie certifiée conforme de l'acte de naissance",
+      "Autorisation parentale légalisée du père, de la mère ou du tuteur légal",
+      "Copie de la CNI du parent ou du tuteur",
+      "Justificatif de profession de l'enfant, le cas échéant"
+    ]
+  },
+  "cout_officiel_fcfa": {
+    "montant": 110000,
+    "devise": "FCFA",
+    "precision": "Montant officiel unique pour un passeport ordinaire biométrique."
+  },
+  "lieu_depot": {
+    "pre_enrolement": "Pré-enrôlement obligatoire sur le portail PASSCAM.",
+    "enrolement_physique": "Centre de demande de passeport biométrique (DGSN / PASSCAM) sélectionné lors du pré-enrôlement.",
+    "retrait": "Le passeport est retiré dans le même centre d'enrôlement après notification par SMS ou e-mail."
+  },
+  "delai_moyen": "48 heures après l'enrôlement physique lorsque le dossier est complet et validé.",
+  "base_legale": [
+    "Décret n°2013/131 du 03 mai 2013 portant organisation de la délivrance des passeports.",
+    "Procédure officielle de la Délégation Générale à la Sûreté Nationale (DGSN)."
+  ],
+  "source_officielle": [
+    {
+      "organisme": "PASSCAM / DGSN",
+      "url": "https://www.passcam.cm/passeports"
+    },
+    {
+      "organisme": "DGSN",
+      "url": "https://www.dgsn.cm/wp-content/uploads/2025/05/Depliant-Passport-2025.pdf"
+    }
+  ],
+  "derniere_verification": "2026-07-25",
+  "notes": "Le pré-enrôlement en ligne est obligatoire avant toute présentation au centre biométrique. Les documents originaux doivent être présentés lors de l'enrôlement physique. Certaines pièces complémentaires peuvent être demandées en cas de perte, de changement d'identité ou de situation particulière."
+}
