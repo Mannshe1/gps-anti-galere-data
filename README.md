@@ -1,0 +1,1 @@
+# gps-anti-galere-data
