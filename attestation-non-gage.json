@@ -1,0 +1,25 @@
+{
+  "demarche": "Attestation de non-gage",
+  "pays": "Cameroun",
+  "categorie": "Véhicules & Transport",
+  "pieces_requises": [],
+  "cout_officiel_fcfa": {
+    "montant": null,
+    "devise": "FCFA",
+    "precision": "Aucun coût officiel n'a pu être confirmé."
+  },
+  "lieu_depot": {
+    "organisme": null,
+    "service": null
+  },
+  "delai_moyen": null,
+  "base_legale": [],
+  "source_officielle": [
+    {
+      "organisme": "Ministère des Transports",
+      "url": "https://ssdtmint.cm/"
+    }
+  ],
+  "derniere_verification": "2026-07-25",
+  "notes": "Après vérification, aucune procédure nationale officielle publiée par le Ministère des Transports ou un autre organisme de l'État camerounais ne définit la délivrance d'une attestation de non-gage comme une démarche administrative autonome. Certaines plateformes privées la mentionnent dans les transactions de véhicules d'occasion, mais aucun texte réglementaire officiel, aucun tarif et aucune procédure n'ont pu être confirmés. Cette démarche ne doit donc pas être intégrée comme un service administratif officiel sans source réglementaire."
+}
