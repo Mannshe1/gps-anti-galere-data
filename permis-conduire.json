@@ -1,0 +1,46 @@
+{
+  "demarche": "Permis de conduire",
+  "pays": "Cameroun",
+  "categorie": "Véhicules & Transport",
+  "pieces_requises": {
+    "premiere_demande": [
+      "Pièce d'identité valide (Carte Nationale d'Identité, passeport ou titre de séjour)",
+      "Attestation d'inscription dans une auto-école agréée",
+      "Certificat d'aptitude à l'examen théorique",
+      "Certificat d'aptitude à l'examen pratique",
+      "Attestation d'enregistrement délivrée par le système du Ministère des Transports",
+      "Certificat médical d'aptitude à la conduite, lorsque requis"
+    ],
+    "renouvellement": [
+      "Pièce d'identité valide",
+      "Permis de conduire à renouveler",
+      "En cas de perte : déclaration de perte et attestation de non-retrait délivrée par l'administration compétente"
+    ]
+  },
+  "cout_officiel_fcfa": {
+    "montant": null,
+    "devise": "FCFA",
+    "precision": "Les frais varient selon la nature de l'opération (première délivrance, renouvellement, duplicata, modification, échange de permis étranger) et la catégorie du permis. Aucun montant unique officiel ne s'applique à toutes les demandes."
+  },
+  "lieu_depot": {
+    "pre_demande": "Plateforme des Services Dématérialisés du Ministère des Transports.",
+    "depot_physique": "Centre de traitement ou Délégation Régionale des Transports compétente.",
+    "formation": "Auto-école agréée par le Ministère des Transports."
+  },
+  "delai_moyen": "Variable selon la nature de la demande et le centre de traitement. Le permis est délivré après validation du dossier et production du titre.",
+  "base_legale": [
+    "Code de la route camerounais.",
+    "Textes réglementaires du Ministère des Transports relatifs au permis de conduire."
+  ],
+  "source_officielle": [
+    {
+      "organisme": "Ministère des Transports (Services Dématérialisés)",
+      "url": "https://ssdtmint.cm/"
+    },
+    {
+      "organisme": "Trésor Public Camerounais - Paiement des frais MINT",
+      "url": "https://tresorpublic.cm/fr/ministries/mint"
+    }
+  ],
+  "derniere_verification": "2026-07-25",
+  "notes": "Le Ministère des Transports ne publie pas un tarif forfaitaire unique pour toutes les demandes de permis. Les frais dépendent de la prestation sollicitée (première délivrance, édition, renouvellement, duplicata, échange, etc.) et sont calculés lors de la procédure dématérialisée. Les frais de formation en auto-école ne constituent pas des frais administratifs officiels de l'État. Les rumeurs d'augmentation généralisée des frais de timbre ont été officiellement démenties par le Ministère des Transports. :contentReference[oaicite:0]{index=0}
