@@ -1,0 +1,103 @@
+{
+  "id": "acte_mariage",
+  "demarche": "Acte de mariage (Mariage civil)",
+  "pays": "Cameroun",
+  "categorie": "État civil",
+  "ministere": {
+    "nom": "Ministère de la Décentralisation et du Développement Local",
+    "sigle": "MINDDEVEL"
+  },
+  "organisme_competent": {
+    "nom": "Mairie du lieu de célébration",
+    "type": "Service de l'état civil"
+  },
+  "description": "Célébration du mariage civil devant l'Officier d'état civil et établissement de l'acte de mariage.",
+  "beneficiaires": [
+    "Toute personne remplissant les conditions légales du mariage au Cameroun."
+  ],
+  "conditions": [
+    "Consentement libre des futurs époux.",
+    "Capacité juridique de se marier.",
+    "Publication préalable des bans conformément à la loi."
+  ],
+  "pieces_requises": {
+    "dossier_de_mariage": [
+      "Copie certifiée conforme de l'acte de naissance de chacun des futurs époux",
+      "Certificat de célibat de chacun des futurs époux",
+      "Certificat de résidence (ou domicile) de chacun des futurs époux",
+      "Photocopie de la Carte Nationale d'Identité de chacun des futurs époux",
+      "Photocopie des Cartes Nationales d'Identité des témoins",
+      "Contrat de mariage, lorsqu'un régime matrimonial particulier est choisi",
+      "Photographies d'identité, lorsque la mairie les exige"
+    ]
+  },
+  "cout": {
+    "montant": null,
+    "devise": "XAF",
+    "variable": true,
+    "details": [],
+    "precision": "Les frais de célébration, de publication des bans et les droits communaux sont fixés par chaque commune. Il n'existe pas de tarif national unique."
+  },
+  "procedure": [
+    {
+      "ordre": 1,
+      "titre": "Constitution du dossier"
+    },
+    {
+      "ordre": 2,
+      "titre": "Dépôt du dossier à la mairie"
+    },
+    {
+      "ordre": 3,
+      "titre": "Publication des bans"
+    },
+    {
+      "ordre": 4,
+      "titre": "Célébration du mariage"
+    },
+    {
+      "ordre": 5,
+      "titre": "Signature de l'acte et remise du livret de famille"
+    }
+  ],
+  "lieu_depot": {
+    "physique": [
+      "Service de l'état civil de la mairie compétente"
+    ],
+    "en_ligne": {
+      "disponible": false,
+      "url": null
+    }
+  },
+  "delai": {
+    "officiel": null,
+    "constate": "La célébration intervient après la publication légale des bans et l'acceptation du dossier par la mairie."
+  },
+  "validite": {
+    "duree": "Permanent"
+  },
+  "base_legale": [
+    {
+      "texte": "Ordonnance n°81-02 du 29 juin 1981 portant organisation de l'état civil",
+      "type": "Ordonnance"
+    },
+    {
+      "texte": "Code civil applicable en matière de mariage",
+      "type": "Code"
+    }
+  ],
+  "source_officielle": [
+    {
+      "organisme": "eRegulations Cameroun",
+      "url": "https://yaounde.eregulations.org/procedure/print/81/69/step/0?l=fr&showCertification=false&showRecourses=true",
+      "date_consultation": "2026-07-25"
+    },
+    {
+      "organisme": "Communauté Urbaine d'Edéa",
+      "url": "https://www.edea.cm/ova_doc/la-procedure-pour-acte-de-mariage/",
+      "date_consultation": "2026-07-25"
+    }
+  ],
+  "derniere_verification": "2026-07-25",
+  "notes": "Le dossier peut varier légèrement selon les communes. En revanche, les pièces essentielles (actes de naissance, certificats de célibat, certificats de résidence, pièces d'identité et publication des bans) sont communes à la majorité des mairies camerounaises. Aucun coût national officiel unique n'est fixé ; les droits sont déterminés par chaque commune. :contentReference[oaicite:0]{index=0}"
+}
