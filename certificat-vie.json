@@ -1,0 +1,93 @@
+{
+  "id": "certificat_de_vie",
+  "demarche": "Certificat de vie (preuve d'existence)",
+  "pays": "Cameroun",
+  "categorie": "État civil",
+  "ministere": {
+    "nom": "Ministère de la Décentralisation et du Développement Local",
+    "sigle": "MINDDEVEL"
+  },
+  "organisme_competent": {
+    "nom": "Mairie / Service de l'état civil",
+    "type": "Officier d'état civil"
+  },
+  "description": "Document administratif attestant qu'une personne est vivante à la date de délivrance.",
+  "beneficiaires": [
+    "Toute personne ayant besoin de justifier son existence auprès d'une administration, d'une banque ou d'un organisme."
+  ],
+  "pieces_requises": {
+    "demande_standard": [
+      "Présence physique du demandeur devant l'Officier d'état civil",
+      "Carte Nationale d'Identité (CNI) ou autre pièce d'identité valide",
+      "Photocopie de la pièce d'identité, lorsque demandée",
+      "Photographie d'identité, selon la pratique de certaines communes"
+    ],
+    "cas_particulier_retraite": [
+      "Pièce d'identité valide",
+      "Référence du dossier de pension ou document demandé par l'organisme bénéficiaire, lorsque nécessaire"
+    ]
+  },
+  "cout": {
+    "montant": null,
+    "devise": "XAF",
+    "variable": true,
+    "details": [],
+    "precision": "Les frais administratifs éventuels et droits communaux varient selon la commune. Aucun tarif national unique n'a été confirmé."
+  },
+  "procedure": [
+    {
+      "ordre": 1,
+      "titre": "Présentation du demandeur",
+      "description": "Le demandeur se présente au service d'état civil."
+    },
+    {
+      "ordre": 2,
+      "titre": "Vérification d'identité",
+      "description": "L'Officier d'état civil vérifie l'identité du demandeur."
+    },
+    {
+      "ordre": 3,
+      "titre": "Délivrance du certificat",
+      "description": "Le certificat est établi et remis au demandeur."
+    }
+  ],
+  "lieu_depot": {
+    "physique": [
+      "Mairie du lieu de résidence ou mairie compétente selon les règles locales"
+    ],
+    "en_ligne": {
+      "disponible": false,
+      "url": null
+    }
+  },
+  "delai": {
+    "officiel": null,
+    "constate": "Souvent délivré le jour même lorsque le demandeur est présent et que les informations sont vérifiées."
+  },
+  "validite": {
+    "duree": "Variable selon l'organisme qui exige le document."
+  },
+  "base_legale": [
+    {
+      "texte": "Ordonnance n°81-02 du 29 juin 1981 portant organisation de l'état civil",
+      "type": "Ordonnance"
+    },
+    {
+      "texte": "Règles administratives relatives aux actes délivrés par les officiers d'état civil",
+      "type": "Procédure administrative"
+    }
+  ],
+  "source_officielle": [
+    {
+      "organisme": "eRegulations Cameroun",
+      "url": "https://yaounde.eregulations.org/",
+      "date_consultation": "2026-07-25"
+    },
+    {
+      "organisme": "Collectivités territoriales camerounaises - Services d'état civil",
+      "type": "Source administrative locale"
+    }
+  ],
+  "derniere_verification": "2026-07-25",
+  "notes": "Le certificat de vie ne possède pas un tarif national unique publié. Les exigences peuvent varier selon la commune et selon l'organisme qui demande le document (CNPS, banque, administration, ambassade, etc.). La présence physique du demandeur est généralement exigée afin de constater l'existence de la personne."
+}
