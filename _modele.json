@@ -1,0 +1,18 @@
+{
+  "id": "slug-de-la-demarche",
+  "titre": "Nom complet de la démarche",
+  "categorie": "etat-civil|justice|vehicule|fiscalite|entreprise|actes-divers",
+  "pieces_requises": [
+    "Pièce 1",
+    "Pièce 2"
+  ],
+  "cout_officiel_fcfa": 0,
+  "cout_timbres_fcfa": 0,
+  "cout_total_estime_fcfa": 0,
+  "lieu": "Administration compétente",
+  "delai_moyen": "Délai indicatif",
+  "base_legale": "Référence du texte officiel ou source",
+  "derniere_verification": "AAAA-MM-JJ",
+  "source_url": "URL de la source officielle consultée",
+  "notes": "Avertissements, cas particuliers, précisions utiles"
+}
