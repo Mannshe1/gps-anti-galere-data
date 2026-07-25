@@ -1,0 +1,45 @@
+{
+  "demarche": "Légalisation de documents",
+  "pays": "Cameroun",
+  "categorie": "Justice",
+  "pieces_requises": {
+    "demande_standard": [
+      "Original du document à légaliser",
+      "Photocopie du document",
+      "Carte Nationale d'Identité (CNI) ou autre pièce d'identité valide du demandeur",
+      "Timbre fiscal lorsque requis par l'autorité compétente"
+    ]
+  },
+  "cout_officiel_fcfa": {
+    "montant": null,
+    "devise": "FCFA",
+    "precision": "Le coût varie selon la nature du document, l'autorité compétente et les droits de timbre applicables. Aucun tarif national unique n'est fixé pour toutes les légalisations."
+  },
+  "lieu_depot": {
+    "autorites_competentes": [
+      "Commissariat de Police",
+      "Brigade de Gendarmerie",
+      "Mairie (Commune)",
+      "Sous-préfecture ou Préfecture, selon la nature du document",
+      "Administration ayant délivré le document, lorsque la réglementation l'impose"
+    ]
+  },
+  "delai_moyen": "Le document est généralement légalisé le jour même lorsque le dossier est complet.",
+  "base_legale": [
+    "Décret n°2010/0246/PM du 26 février 2010 fixant les modalités d'exercice de certaines compétences transférées aux communes en matière d'état civil.",
+    "Textes particuliers régissant la légalisation des actes administratifs.",
+    "Instructions administratives du MINAT et des collectivités territoriales."
+  ],
+  "source_officielle": [
+    {
+      "organisme": "eRegulations Cameroun",
+      "url": "https://yaounde.eregulations.org/"
+    },
+    {
+      "organisme": "Ministère de l'Administration Territoriale (MINAT)",
+      "url": "https://www.minat.gov.cm/"
+    }
+  ],
+  "derniere_verification": "2026-07-25",
+  "notes": "La légalisation est une procédure qui certifie la conformité d'une copie à son original ou l'authenticité d'une signature, selon le cas. Les frais et l'autorité compétente varient selon la nature du document. Aucun coût officiel unique applicable à toutes les légalisations n'a été identifié."
+}
