@@ -1,55 +1,204 @@
 {
+  "id": "passeport",
   "demarche": "Passeport ordinaire biométrique",
-  "pays": "Cameroun",
-  "categorie": "Titre de voyage",
+  "categorie": "Identité / Voyage",
+
+  "description": "Document officiel de voyage permettant à un citoyen camerounais de justifier son identité et sa nationalité lors de déplacements internationaux.",
+
+  "autorite_competente": {
+    "ministere": "Administration de la sécurité nationale",
+    "organisme": "Délégation Générale à la Sûreté Nationale (DGSN)",
+    "service": "Service des passeports"
+  },
+
+  "beneficiaires": [
+    "Citoyens camerounais",
+    "Mineurs camerounais représentés par leurs représentants légaux"
+  ],
+
+  "conditions": [
+    "Être de nationalité camerounaise",
+    "Disposer des justificatifs d'état civil requis",
+    "Se soumettre à l'enrôlement biométrique"
+  ],
+
   "pieces_requises": {
-    "premiere_demande_majeur": [
-      "Récépissé de pré-enrôlement généré sur la plateforme PASSCAM",
-      "Photocopie certifiée conforme de l'acte de naissance",
+    "premiere_demande": [
+      "Récépissé de pré-enrôlement PASSCAM",
+      "Copie certifiée conforme de l'acte de naissance",
       "Carte Nationale d'Identité (CNI) valide",
-      "Justificatif de profession, le cas échéant",
-      "Acte de mariage ou document justificatif en cas de changement de nom (le cas échéant)"
+      "Justificatif de profession lorsque nécessaire",
+      "Document justifiant une situation particulière (changement de nom, mariage, etc.) lorsque nécessaire"
     ],
+
     "renouvellement": [
       "Récépissé de pré-enrôlement",
       "Ancien passeport",
-      "Carte Nationale d'Identité (CNI) valide",
-      "Justificatif de profession, le cas échéant",
-      "Document justifiant le changement d'état civil, le cas échéant"
+      "Carte Nationale d'Identité valide",
+      "Justificatif du changement éventuel d'état civil"
     ],
-    "mineur": [
+
+    "duplicata": [
       "Récépissé de pré-enrôlement",
-      "Photocopie certifiée conforme de l'acte de naissance",
-      "Autorisation parentale légalisée du père, de la mère ou du tuteur légal",
-      "Copie de la CNI du parent ou du tuteur",
-      "Justificatif de profession de l'enfant, le cas échéant"
+      "Déclaration de perte délivrée par une autorité compétente",
+      "Carte Nationale d'Identité valide",
+      "Documents d'état civil requis"
+    ],
+
+    "cas_particuliers": [
+      "Autorisation parentale pour les mineurs",
+      "Pièces du représentant légal du mineur",
+      "Documents complémentaires en cas de situation administrative particulière"
     ]
   },
-  "cout_officiel_fcfa": {
-    "montant": 110000,
-    "devise": "FCFA",
-    "precision": "Montant officiel unique pour un passeport ordinaire biométrique."
-  },
-  "lieu_depot": {
-    "pre_enrolement": "Pré-enrôlement obligatoire sur le portail PASSCAM.",
-    "enrolement_physique": "Centre de demande de passeport biométrique (DGSN / PASSCAM) sélectionné lors du pré-enrôlement.",
-    "retrait": "Le passeport est retiré dans le même centre d'enrôlement après notification par SMS ou e-mail."
-  },
-  "delai_moyen": "48 heures après l'enrôlement physique lorsque le dossier est complet et validé.",
-  "base_legale": [
-    "Décret n°2013/131 du 03 mai 2013 portant organisation de la délivrance des passeports.",
-    "Procédure officielle de la Délégation Générale à la Sûreté Nationale (DGSN)."
-  ],
-  "source_officielle": [
+
+  "documents_associes": [
     {
-      "organisme": "PASSCAM / DGSN",
-      "url": "https://www.passcam.cm/passeports"
+      "nom": "Acte de naissance",
+      "obligatoire": true,
+      "description": "Justifie l'état civil du demandeur."
     },
     {
-      "organisme": "DGSN",
-      "url": "https://www.dgsn.cm/wp-content/uploads/2025/05/Depliant-Passport-2025.pdf"
+      "nom": "Carte Nationale d'Identité",
+      "obligatoire": true,
+      "description": "Permet l'identification du demandeur."
     }
   ],
-  "derniere_verification": "2026-07-25",
-  "notes": "Le pré-enrôlement en ligne est obligatoire avant toute présentation au centre biométrique. Les documents originaux doivent être présentés lors de l'enrôlement physique. Certaines pièces complémentaires peuvent être demandées en cas de perte, de changement d'identité ou de situation particulière."
+
+  "cout": {
+    "montant": 110000,
+    "devise": "XAF",
+    "variable": false,
+    "details": [
+      {
+        "libelle": "Droit de timbre / frais de délivrance du passeport ordinaire biométrique",
+        "montant": 110000,
+        "devise": "XAF"
+      }
+    ],
+    "precision": "Le montant correspond au coût officiel du passeport ordinaire biométrique camerounais."
+  },
+
+  "procedure": [
+    {
+      "ordre": 1,
+      "titre": "Pré-enrôlement en ligne",
+      "description": "Créer une demande sur la plateforme officielle PASSCAM et obtenir un récépissé."
+    },
+    {
+      "ordre": 2,
+      "titre": "Paiement des frais",
+      "description": "Effectuer le paiement selon les modalités prévues par la plateforme."
+    },
+    {
+      "ordre": 3,
+      "titre": "Enrôlement biométrique",
+      "description": "Se présenter au centre choisi avec les pièces originales."
+    },
+    {
+      "ordre": 4,
+      "titre": "Production du passeport",
+      "description": "La demande est traitée après validation des données."
+    },
+    {
+      "ordre": 5,
+      "titre": "Retrait",
+      "description": "Retirer le passeport auprès du centre indiqué après notification."
+    }
+  ],
+
+  "lieu_depot": {
+    "physique": [
+      "Centre d'enrôlement des passeports biométriques PASSCAM",
+      "Services de la DGSN habilités"
+    ],
+    "en_ligne": {
+      "disponible": true,
+      "url": "https://www.passcam.cm/"
+    }
+  },
+
+  "delai": {
+    "officiel": "48 heures après enrôlement physique lorsque le dossier est complet et validé.",
+    "moyen_pratique": "Variable selon l'affluence, les contrôles administratifs et les contraintes techniques."
+  },
+
+  "validite": {
+    "duree": "5 ans",
+    "conditions": "Renouvelable selon les règles administratives en vigueur."
+  },
+
+  "paiement": {
+    "moyens": [
+      "Paiement électronique via les canaux proposés par PASSCAM"
+    ],
+    "en_ligne": true
+  },
+
+  "prise_rendez_vous": {
+    "obligatoire": false,
+    "modalite": "Le demandeur choisit généralement son centre lors du pré-enrôlement."
+  },
+
+  "base_legale": [
+    {
+      "texte": "Textes réglementaires relatifs à l'établissement et à la délivrance des passeports camerounais",
+      "type": "Réglementation administrative",
+      "reference": "",
+      "date": ""
+    }
+  ],
+
+  "sources": [
+    {
+      "organisme": "Délégation Générale à la Sûreté Nationale (DGSN)",
+      "titre": "Procédure officielle des passeports biométriques",
+      "url": "https://www.dgsn.cm/",
+      "date_verification": "2026-07-25"
+    },
+    {
+      "organisme": "PASSCAM",
+      "titre": "Plateforme officielle des passeports camerounais",
+      "url": "https://www.passcam.cm/",
+      "date_verification": "2026-07-25"
+    }
+  ],
+
+  "faq": [
+    {
+      "question": "Quel est le coût du passeport camerounais ?",
+      "reponse": "Le passeport ordinaire biométrique coûte 110 000 FCFA."
+    },
+    {
+      "question": "Peut-on faire la demande sans passer par internet ?",
+      "reponse": "Le pré-enrôlement numérique fait partie de la procédure officielle."
+    },
+    {
+      "question": "La présence du demandeur est-elle obligatoire ?",
+      "reponse": "Oui, pour la capture biométrique."
+    }
+  ],
+
+  "mots_cles": [
+    "Passeport",
+    "Voyage",
+    "Titre de voyage",
+    "DGSN",
+    "PASSCAM"
+  ],
+
+  "notes": "Les pièces peuvent varier selon l'âge du demandeur, une perte, un changement d'état civil ou une situation particulière. Les mineurs nécessitent des documents supplémentaires liés au représentant légal.",
+
+  "statut_verification": {
+    "verifie": true,
+    "niveau_confiance": "élevé",
+    "elements_a_verifier": [
+      "Évolution éventuelle de la plateforme PASSCAM",
+      "Modification future des frais"
+    ]
+  },
+
+  "version": "1.0",
+
+  "derniere_verification": "2026-07-25"
 }
