@@ -1,40 +1,187 @@
 {
+  "id": "certificat_residence",
   "demarche": "Certificat de résidence",
-  "pays": "Cameroun",
-  "categorie": "État civil",
+  "categorie": "État civil / Administration locale",
+
+  "description": "Document administratif attestant le lieu de résidence habituelle d'une personne sur le territoire camerounais.",
+
+  "autorite_competente": {
+    "ministere": "Ministère de la Décentralisation et du Développement Local (MINDDEVEL)",
+    "organisme": "Commune / Autorité administrative locale",
+    "service": "Service d'état civil ou service administratif compétent"
+  },
+
+  "beneficiaires": [
+    "Toute personne physique résidant au Cameroun ayant besoin de justifier son domicile",
+    "Citoyens camerounais",
+    "Étrangers résidant légalement au Cameroun"
+  ],
+
+  "conditions": [
+    "Résider effectivement dans la zone administrative concernée",
+    "Fournir les éléments permettant de justifier l'adresse déclarée"
+  ],
+
   "pieces_requises": {
-    "demande_standard": [
-      "Demande adressée au Maire ou à l'Officier d'état civil",
-      "Photocopie de la Carte Nationale d'Identité (CNI) en cours de validité",
-      "Justificatif de domicile (facture d'eau, d'électricité, contrat de bail, attestation d'hébergement ou tout autre document accepté par la commune)",
-      "Présence de deux témoins majeurs résidant dans la même localité, munis de leurs Cartes Nationales d'Identité, lorsque la commune l'exige"
+    "premiere_demande": [
+      "Demande adressée à l'autorité compétente",
+      "Carte Nationale d'Identité ou pièce d'identité valide",
+      "Justificatif de domicile ou de résidence lorsque demandé",
+      "Informations sur l'adresse complète du demandeur"
+    ],
+
+    "renouvellement": [
+      "Ancien certificat de résidence lorsque disponible",
+      "Pièce d'identité valide",
+      "Justificatif d'adresse actualisé si nécessaire"
+    ],
+
+    "duplicata": [
+      "Demande de nouvelle délivrance",
+      "Pièce d'identité du demandeur"
+    ],
+
+    "cas_particuliers": [
+      "Titre de séjour ou document administratif pour les étrangers",
+      "Justificatifs complémentaires selon les exigences locales"
     ]
   },
-  "cout_officiel_fcfa": {
-    "montant": null,
-    "devise": "FCFA",
-    "precision": "Il n'existe pas de tarif national unique. Les droits de timbre et frais communaux sont fixés par chaque commune."
-  },
-  "lieu_depot": {
-    "organisme": "Service de l'état civil",
-    "etablissement": "Mairie (Commune d'arrondissement) du lieu de résidence du demandeur."
-  },
-  "delai_moyen": "Généralement délivré le jour même lorsque le dossier est complet ; dans certaines communes, le délai peut aller de 1 à 3 jours ouvrables.",
-  "base_legale": [
-    "Ordonnance n°81-02 du 29 juin 1981 portant organisation de l'état civil.",
-    "Code Général des Collectivités Territoriales Décentralisées.",
-    "Procédures administratives publiées par les communes."
-  ],
-  "source_officielle": [
+
+  "documents_associes": [
     {
-      "organisme": "eRegulations Cameroun",
-      "url": "https://yaounde.eregulations.org/"
+      "nom": "Carte Nationale d'Identité",
+      "obligatoire": true,
+      "description": "Permet l'identification du demandeur."
     },
     {
-      "organisme": "Commune de Douala Ier",
-      "url": "https://mairiedouala1.cm/wp-content/uploads/2016/05/CERTIFICAT-DOMICILE-ET-CELIBAT.pdf"
+      "nom": "Facture ou justificatif d'adresse",
+      "obligatoire": false,
+      "description": "Peut servir à confirmer le lieu de résidence."
     }
   ],
-  "derniere_verification": "2026-07-25",
-  "notes": "Les pièces justificatives de domicile peuvent varier selon les communes. Certaines exigent systématiquement deux témoins tandis que d'autres acceptent un justificatif de domicile récent. Aucun coût officiel national n'étant fixé, le montant n'est pas renseigné afin d'éviter toute information inexacte."
+
+  "cout": {
+    "montant": null,
+    "devise": "XAF",
+    "variable": true,
+    "details": [],
+    "precision": "Les frais éventuels sont fixés par les collectivités locales et peuvent varier selon la commune. Aucun tarif national unique n'a été confirmé."
+  },
+
+  "procedure": [
+    {
+      "ordre": 1,
+      "titre": "Constitution du dossier",
+      "description": "Réunir les documents nécessaires selon les exigences locales."
+    },
+    {
+      "ordre": 2,
+      "titre": "Dépôt de la demande",
+      "description": "Déposer la demande auprès du service administratif compétent."
+    },
+    {
+      "ordre": 3,
+      "titre": "Contrôle de résidence",
+      "description": "L'administration peut vérifier les informations déclarées."
+    },
+    {
+      "ordre": 4,
+      "titre": "Délivrance du certificat",
+      "description": "Le certificat est établi après validation."
+    }
+  ],
+
+  "lieu_depot": {
+    "physique": [
+      "Mairie de résidence",
+      "Service administratif compétent de la commune"
+    ],
+    "en_ligne": {
+      "disponible": false,
+      "url": null
+    }
+  },
+
+  "delai": {
+    "officiel": null,
+    "moyen_pratique": "Généralement délivré le même jour ou dans un délai court lorsque le dossier est complet."
+  },
+
+  "validite": {
+    "duree": "Variable selon l'organisme demandeur.",
+    "conditions": "Certains services exigent un certificat datant de moins de trois mois."
+  },
+
+  "paiement": {
+    "moyens": [
+      "Selon les modalités de paiement de la commune concernée"
+    ],
+    "en_ligne": false
+  },
+
+  "prise_rendez_vous": {
+    "obligatoire": false,
+    "modalite": "Variable selon la commune."
+  },
+
+  "base_legale": [
+    {
+      "texte": "Ordonnance n°81-02 du 29 juin 1981 portant organisation de l'état civil au Cameroun",
+      "type": "Ordonnance",
+      "reference": "81-02",
+      "date": "1981-06-29"
+    },
+    {
+      "texte": "Loi n°2024/016 du 23 décembre 2024 portant organisation du système d'état civil au Cameroun",
+      "type": "Loi",
+      "reference": "2024/016",
+      "date": "2024-12-23"
+    }
+  ],
+
+  "sources": [
+    {
+      "organisme": "Ministère de la Décentralisation et du Développement Local (MINDDEVEL)",
+      "titre": "Organisation administrative et services communaux",
+      "url": "https://minddevel.gov.cm/",
+      "date_verification": "2026-07-25"
+    }
+  ],
+
+  "faq": [
+    {
+      "question": "Où obtenir un certificat de résidence ?",
+      "reponse": "Auprès de la mairie ou du service administratif compétent de la commune de résidence."
+    },
+    {
+      "question": "Le certificat de résidence est-il obligatoire pour un mariage ?",
+      "reponse": "Il est fréquemment demandé dans les dossiers administratifs, notamment certains dossiers de mariage."
+    },
+    {
+      "question": "Combien coûte un certificat de résidence ?",
+      "reponse": "Le coût dépend généralement de la commune qui le délivre."
+    }
+  ],
+
+  "mots_cles": [
+    "Certificat de résidence",
+    "Certificat de domicile",
+    "Justificatif d'adresse",
+    "Mairie"
+  ],
+
+  "notes": "Il n'existe pas de tarif national unique confirmé pour ce document. Les pièces demandées et les frais peuvent varier selon les communes camerounaises.",
+
+  "statut_verification": {
+    "verifie": true,
+    "niveau_confiance": "moyen",
+    "elements_a_verifier": [
+      "Tarifs communaux",
+      "Procédure spécifique selon chaque commune"
+    ]
+  },
+
+  "version": "1.0",
+
+  "derniere_verification": "2026-07-25"
 }
