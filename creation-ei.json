@@ -1,0 +1,42 @@
+{
+  "demarche": "Déclaration de création d'Entreprise Individuelle",
+  "pays": "Cameroun",
+  "categorie": "Création d'entreprise",
+  "pieces_requises": {
+    "entrepreneur_individuel": [
+      "Formulaire unique de création d'entreprise dûment rempli",
+      "Photocopie de la Carte Nationale d'Identité (ou passeport pour les étrangers)",
+      "Deux photos d'identité récentes",
+      "Plan de localisation de l'établissement",
+      "Contrat de bail ou document justifiant la jouissance des locaux, lorsque requis",
+      "Déclaration sur l'honneur de non-condamnation, lorsque requise",
+      "Autorisation préalable ou agrément, lorsque l'activité est réglementée"
+    ]
+  },
+  "cout_officiel_fcfa": {
+    "montant": null,
+    "devise": "FCFA",
+    "precision": "Les frais dépendent de la nature de l'activité, des formalités accomplies (RCCM, timbres, enregistrement, etc.) et des textes fiscaux en vigueur. Aucun tarif forfaitaire unique officiellement applicable à toutes les entreprises individuelles n'a été confirmé."
+  },
+  "lieu_depot": {
+    "organisme": "Centre de Formalités de Création des Entreprises (CFCE)",
+    "guichet": "Guichet Unique Physique ou plateforme de téléprocédures du CFCE lorsqu'elle est disponible."
+  },
+  "delai_moyen": "En principe, le CFCE traite les formalités de création en 72 heures ouvrables lorsque le dossier est complet.",
+  "base_legale": [
+    "Acte uniforme OHADA relatif au Droit Commercial Général.",
+    "Décret portant organisation et fonctionnement du Centre de Formalités de Création des Entreprises (CFCE)."
+  ],
+  "source_officielle": [
+    {
+      "organisme": "Centre de Formalités de Création des Entreprises (CFCE)",
+      "url": "https://www.cfce.cm"
+    },
+    {
+      "organisme": "Agence de Promotion des Investissements (API Cameroun)",
+      "url": "https://www.investincameroon.net"
+    }
+  ],
+  "derniere_verification": "2026-07-25",
+  "notes": "Le CFCE constitue un guichet unique regroupant plusieurs administrations (RCCM, DGI, CNPS, etc.). Les pièces complémentaires peuvent varier selon que l'activité est réglementée ou non. Le coût total dépend des formalités effectivement réalisées et des droits exigibles à la date de la demande."
+}
