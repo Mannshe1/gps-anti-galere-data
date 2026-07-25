@@ -1,72 +1,191 @@
 {
   "id": "certificat_propriete_fonciere",
-  "demarche": "Certificat de propriété foncière",
-  "pays": "Cameroun",
-  "categorie": "Foncier",
-  "ministere": {
-    "nom": "Ministère des Domaines, du Cadastre et des Affaires Foncières",
-    "sigle": "MINDCAF"
+  "demarche": "Certificat de propriété foncière (Titre foncier)",
+  "categorie": "Foncier / Domaine",
+
+  "description": "Document administratif officiel établissant le droit de propriété d'une personne sur un terrain immatriculé au Cameroun. Le document juridiquement reconnu est le titre foncier.",
+
+  "autorite_competente": {
+    "ministere": "Ministère des Domaines, du Cadastre et des Affaires Foncières (MINDCAF)",
+    "organisme": "Services départementaux des domaines, du cadastre et des affaires foncières",
+    "service": "Service de la conservation foncière"
   },
-  "organisme_competent": {
-    "nom": "Conservation foncière territorialement compétente",
-    "type": "Conservation foncière"
-  },
-  "description": "Document délivré par le Conservateur foncier attestant la propriété d'un immeuble immatriculé inscrit au livre foncier.",
+
+  "beneficiaires": [
+    "Personnes physiques propriétaires ou acquéreurs d'un terrain",
+    "Personnes morales propriétaires de biens fonciers",
+    "Ayants droit dans les procédures successorales"
+  ],
+
+  "conditions": [
+    "Justifier d'un droit ou d'une procédure d'accès à la propriété foncière",
+    "Fournir les documents relatifs au terrain",
+    "Respecter la procédure d'immatriculation foncière applicable"
+  ],
+
   "pieces_requises": {
-    "demande_standard": [
-      "Demande adressée au Conservateur foncier compétent",
-      "Références du titre foncier concerné (numéro du titre foncier)",
-      "Pièce d'identité valide du demandeur",
-      "Procuration, lorsque la demande est présentée par un mandataire",
-      "Justificatif du paiement des droits exigibles"
+    "premiere_demande": [
+      "Demande d'immatriculation foncière adressée à l'autorité compétente",
+      "Pièce d'identité du demandeur",
+      "Documents justifiant l'origine du droit sur le terrain",
+      "Plan de situation ou documents cadastraux lorsque requis",
+      "Procès-verbal de bornage lorsque applicable",
+      "Documents relatifs aux droits coutumiers ou actes de cession selon le cas"
+    ],
+
+    "renouvellement": [
+      "Le titre foncier n'est pas renouvelé ; les modifications font l'objet de procédures spécifiques."
+    ],
+
+    "duplicata": [
+      "Demande de duplicata du titre foncier",
+      "Déclaration de perte lorsque nécessaire",
+      "Pièce d'identité du propriétaire"
+    ],
+
+    "cas_particuliers": [
+      "Acte de succession en cas d'héritage",
+      "Acte notarié en cas de mutation",
+      "Documents d'autorisation pour certaines opérations foncières"
     ]
   },
+
+  "documents_associes": [
+    {
+      "nom": "Plan cadastral",
+      "obligatoire": false,
+      "description": "Permet l'identification technique de la parcelle."
+    },
+    {
+      "nom": "Acte de vente ou document de transmission",
+      "obligatoire": false,
+      "description": "Justifie l'origine du droit revendiqué."
+    }
+  ],
+
   "cout": {
-    "montant": 5000,
+    "montant": null,
     "devise": "XAF",
-    "variable": false,
-    "details": [
-      {
-        "libelle": "Délivrance d'un certificat (relevé) de propriété",
-        "montant": 5000
-      }
-    ]
+    "variable": true,
+    "details": [],
+    "precision": "Les frais varient selon la superficie, la localisation du terrain, les opérations cadastrales et les droits administratifs applicables."
   },
+
+  "procedure": [
+    {
+      "ordre": 1,
+      "titre": "Dépôt de la demande",
+      "description": "Le demandeur dépose son dossier auprès du service foncier compétent."
+    },
+    {
+      "ordre": 2,
+      "titre": "Instruction foncière",
+      "description": "L'administration examine les pièces et vérifie la situation juridique du terrain."
+    },
+    {
+      "ordre": 3,
+      "titre": "Opérations cadastrales",
+      "description": "Des opérations techniques peuvent être réalisées notamment le bornage."
+    },
+    {
+      "ordre": 4,
+      "titre": "Établissement du titre foncier",
+      "description": "Après validation, le titre foncier est établi."
+    }
+  ],
+
   "lieu_depot": {
     "physique": [
-      "Conservation foncière du ressort où est situé l'immeuble"
+      "Service départemental du MINDCAF compétent selon la localisation du terrain",
+      "Conservation foncière compétente"
     ],
     "en_ligne": {
       "disponible": false,
       "url": null
     }
   },
+
   "delai": {
     "officiel": null,
-    "constate": "Variable selon la conservation foncière et la disponibilité du registre foncier."
+    "moyen_pratique": "Variable selon la complexité du dossier, les opérations cadastrales et les délais administratifs."
   },
+
+  "validite": {
+    "duree": "Le titre foncier constitue un droit durable sur le terrain.",
+    "conditions": "Toute modification (vente, succession, hypothèque) doit suivre les procédures foncières prévues."
+  },
+
+  "paiement": {
+    "moyens": [
+      "Selon les modalités des services du MINDCAF"
+    ],
+    "en_ligne": false
+  },
+
+  "prise_rendez_vous": {
+    "obligatoire": false,
+    "modalite": "Variable selon le service foncier concerné."
+  },
+
   "base_legale": [
     {
       "texte": "Ordonnance n°74-1 du 6 juillet 1974 fixant le régime foncier",
-      "type": "Ordonnance"
+      "type": "Ordonnance",
+      "reference": "74-1",
+      "date": "1974-07-06"
     },
     {
-      "texte": "Décret n°76-165 du 27 avril 1976 fixant les conditions d'obtention du titre foncier",
-      "type": "Décret"
+      "texte": "Décret n°76/165 du 27 avril 1976 fixant les conditions d'obtention du titre foncier",
+      "type": "Décret",
+      "reference": "76/165",
+      "date": "1976-04-27"
     }
   ],
-  "source_officielle": [
+
+  "sources": [
     {
-      "organisme": "MINDCAF",
-      "titre": "Foire aux questions - Relevés des certificats de propriété",
-      "url": "https://mindcaf.gov.cm/fr/faq/"
+      "organisme": "Ministère des Domaines, du Cadastre et des Affaires Foncières",
+      "titre": "Gestion domaniale et foncière",
+      "url": "https://mindcaf.gov.cm/",
+      "date_verification": "2026-07-25"
+    }
+  ],
+
+  "faq": [
+    {
+      "question": "Le certificat de propriété foncière existe-t-il comme document officiel ?",
+      "reponse": "La dénomination juridique utilisée au Cameroun est principalement le titre foncier."
     },
     {
-      "organisme": "MINDCAF",
-      "titre": "Guide de l'usager et manuels des procédures foncières",
-      "url": "https://mindcaf.gov.cm/fr/docs/"
+      "question": "Où demander un titre foncier ?",
+      "reponse": "Auprès des services compétents du MINDCAF selon la localisation du terrain."
+    },
+    {
+      "question": "Le titre foncier peut-il être transmis ?",
+      "reponse": "Oui, par des procédures comme la mutation, la succession ou d'autres actes fonciers."
     }
   ],
-  "derniere_verification": "2026-07-25",
-  "notes": "Le MINDCAF indique un droit forfaitaire de 5 000 FCFA par titre foncier pour les relevés des certificats de propriété. Le délai de délivrance n'est pas fixé par un texte national publié et peut varier selon la conservation foncière compétente. :contentReference[oaicite:1]{index=1}"
+
+  "mots_cles": [
+    "Titre foncier",
+    "Propriété foncière",
+    "MINDCAF",
+    "Terrain",
+    "Cadastre"
+  ],
+
+  "notes": "Correction terminologique importante : au Cameroun, le document officiel attestant la propriété foncière est le titre foncier. Le terme 'certificat de propriété foncière' doit être traité comme une appellation non officielle.",
+
+  "statut_verification": {
+    "verifie": true,
+    "niveau_confiance": "élevé",
+    "elements_a_verifier": [
+      "Barème tarifaire actualisé des opérations foncières",
+      "Délais moyens selon chaque département"
+    ]
+  },
+
+  "version": "1.0",
+
+  "derniere_verification": "2026-07-25"
 }
