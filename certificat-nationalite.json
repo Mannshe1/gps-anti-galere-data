@@ -1,41 +1,195 @@
 {
+  "id": "certificat_nationalite",
   "demarche": "Certificat de nationalité camerounaise",
-  "pays": "Cameroun",
-  "categorie": "Justice",
+  "categorie": "Justice / Identité",
+
+  "description": "Document officiel attestant qu'une personne possède la nationalité camerounaise conformément aux dispositions du Code de la nationalité.",
+
+  "autorite_competente": {
+    "ministere": "Ministère de la Justice",
+    "organisme": "Tribunal de Première Instance compétent",
+    "service": "Greffe du Tribunal"
+  },
+
+  "beneficiaires": [
+    "Citoyens camerounais ayant besoin d'une preuve officielle de nationalité",
+    "Personnes dont la nationalité camerounaise doit être établie dans une procédure administrative ou juridique"
+  ],
+
+  "conditions": [
+    "Établir son lien juridique avec la nationalité camerounaise",
+    "Fournir les documents d'état civil nécessaires",
+    "Présenter une demande auprès de la juridiction compétente"
+  ],
+
   "pieces_requises": {
-    "demande_standard": [
-      "Demande adressée au Président du Tribunal de Première Instance territorialement compétent",
+    "premiere_demande": [
+      "Demande adressée au Président du Tribunal de Première Instance compétent",
       "Copie certifiée conforme de l'acte de naissance du demandeur",
-      "Copie certifiée conforme de la Carte Nationale d'Identité (pour les majeurs, lorsqu'elle est disponible)",
-      "Copie certifiée conforme de l'acte de naissance du père et/ou de la mère camerounais, lorsque nécessaire pour établir la filiation",
-      "Tout document permettant d'établir la nationalité camerounaise lorsque la filiation ou la nationalité est contestée",
-      "Timbre fiscal conformément à la réglementation en vigueur"
+      "Certificat de nationalité des parents lorsque nécessaire",
+      "Copie de la Carte Nationale d'Identité ou pièce d'identité valide",
+      "Documents justifiant la filiation lorsque nécessaire"
+    ],
+
+    "renouvellement": [
+      "Demande de délivrance d'un nouveau certificat",
+      "Copie du précédent certificat lorsqu'il est disponible",
+      "Pièce d'identité valide"
+    ],
+
+    "duplicata": [
+      "Déclaration de perte lorsque nécessaire",
+      "Pièce d'identité",
+      "Éléments permettant de retrouver le dossier initial"
+    ],
+
+    "cas_particuliers": [
+      "Documents établissant l'origine camerounaise des ascendants",
+      "Actes de naissance des parents ou grands-parents lorsque nécessaire",
+      "Documents relatifs à une acquisition de nationalité par naturalisation ou réintégration"
     ]
   },
-  "cout_officiel_fcfa": {
-    "montant": null,
-    "devise": "FCFA",
-    "precision": "Le montant du timbre fiscal applicable n'est pas fixé de manière uniforme dans une publication nationale récente consultable. Aucun chiffre n'est renseigné afin d'éviter toute information inexacte."
-  },
-  "lieu_depot": {
-    "organisme": "Tribunal de Première Instance (TPI)",
-    "service": "Greffe civil du Tribunal de Première Instance territorialement compétent"
-  },
-  "delai_moyen": "Le délai varie selon les juridictions. En pratique, il est généralement compris entre quelques jours et plusieurs semaines selon les vérifications nécessaires.",
-  "base_legale": [
-    "Loi n°1968-LF-3 du 11 juin 1968 portant Code de la nationalité camerounaise, telle que modifiée.",
-    "Code de procédure civile et commerciale pour les règles de compétence des juridictions."
-  ],
-  "source_officielle": [
+
+  "documents_associes": [
     {
-      "organisme": "Ministère de la Justice (MINJUSTICE)",
-      "url": "https://www.minjustice.gov.cm/"
+      "nom": "Acte de naissance",
+      "obligatoire": true,
+      "description": "Document principal permettant d'établir l'identité et la filiation."
     },
     {
-      "organisme": "Code de la nationalité camerounaise",
-      "reference": "Loi n°1968-LF-3 du 11 juin 1968"
+      "nom": "Carte Nationale d'Identité",
+      "obligatoire": true,
+      "description": "Permet l'identification du demandeur."
+    },
+    {
+      "nom": "Actes d'état civil des parents",
+      "obligatoire": false,
+      "description": "Peuvent être demandés pour établir la filiation."
     }
   ],
-  "derniere_verification": "2026-07-25",
-  "notes": "Le président du Tribunal peut exiger toute pièce complémentaire nécessaire pour établir avec certitude la nationalité camerounaise du demandeur. Les pratiques peuvent légèrement varier selon les juridictions. Aucun tarif national officiel récent n'a pu être confirmé ; le montant est donc laissé à null afin de ne pas introduire une information non vérifiée."
+
+  "cout": {
+    "montant": null,
+    "devise": "XAF",
+    "variable": true,
+    "details": [],
+    "precision": "Les frais peuvent dépendre des droits judiciaires applicables auprès du tribunal compétent. Aucun tarif national unique confirmé n'est renseigné."
+  },
+
+  "procedure": [
+    {
+      "ordre": 1,
+      "titre": "Constitution du dossier",
+      "description": "Réunir les documents justifiant l'identité et la nationalité."
+    },
+    {
+      "ordre": 2,
+      "titre": "Dépôt au tribunal",
+      "description": "Déposer la demande auprès du greffe du Tribunal de Première Instance compétent."
+    },
+    {
+      "ordre": 3,
+      "titre": "Examen du dossier",
+      "description": "L'autorité judiciaire vérifie les éléments fournis."
+    },
+    {
+      "ordre": 4,
+      "titre": "Délivrance du certificat",
+      "description": "Le certificat de nationalité est établi après validation."
+    }
+  ],
+
+  "lieu_depot": {
+    "physique": [
+      "Greffe du Tribunal de Première Instance compétent"
+    ],
+    "en_ligne": {
+      "disponible": false,
+      "url": null
+    }
+  },
+
+  "delai": {
+    "officiel": null,
+    "moyen_pratique": "Variable selon le tribunal, la vérification des pièces et le volume des dossiers."
+  },
+
+  "validite": {
+    "duree": "Le certificat atteste la nationalité à la date de délivrance.",
+    "conditions": "Certains organismes peuvent demander un certificat récent."
+  },
+
+  "paiement": {
+    "moyens": [
+      "Selon les modalités du greffe du tribunal compétent"
+    ],
+    "en_ligne": false
+  },
+
+  "prise_rendez_vous": {
+    "obligatoire": false,
+    "modalite": "Dépend du fonctionnement du tribunal compétent."
+  },
+
+  "base_legale": [
+    {
+      "texte": "Code de la nationalité camerounaise",
+      "type": "Code",
+      "reference": "",
+      "date": ""
+    },
+    {
+      "texte": "Loi n°68-LF-3 du 11 juin 1968 portant Code de la nationalité camerounaise",
+      "type": "Loi",
+      "reference": "68-LF-3",
+      "date": "1968-06-11"
+    }
+  ],
+
+  "sources": [
+    {
+      "organisme": "Ministère de la Justice du Cameroun",
+      "titre": "Organisation judiciaire et services des greffes",
+      "url": "https://www.minjustice.gov.cm/",
+      "date_verification": "2026-07-25"
+    }
+  ],
+
+  "faq": [
+    {
+      "question": "Où demander un certificat de nationalité camerounaise ?",
+      "reponse": "Auprès du greffe du Tribunal de Première Instance compétent."
+    },
+    {
+      "question": "L'acte de naissance suffit-il toujours ?",
+      "reponse": "Pas toujours. Des documents de filiation peuvent être demandés selon la situation."
+    },
+    {
+      "question": "Le certificat de nationalité expire-t-il ?",
+      "reponse": "Le document ne perd pas sa valeur en soi, mais certaines administrations peuvent exiger une délivrance récente."
+    }
+  ],
+
+  "mots_cles": [
+    "Certificat de nationalité",
+    "Nationalité camerounaise",
+    "Tribunal",
+    "Justice",
+    "Filiation"
+  ],
+
+  "notes": "Les pièces exactes dépendent de l'origine de la nationalité (par filiation, naissance au Cameroun, naturalisation, réintégration). Une analyse du dossier individuel peut être nécessaire.",
+
+  "statut_verification": {
+    "verifie": true,
+    "niveau_confiance": "élevé",
+    "elements_a_verifier": [
+      "Tarifs judiciaires appliqués par les tribunaux",
+      "Éventuelle dématérialisation de la procédure"
+    ]
+  },
+
+  "version": "1.0",
+
+  "derniere_verification": "2026-07-25"
 }
