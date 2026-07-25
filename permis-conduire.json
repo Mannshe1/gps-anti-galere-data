@@ -1,46 +1,193 @@
 {
-  "demarche": "Permis de conduire",
-  "pays": "Cameroun",
-  "categorie": "Véhicules & Transport",
+  "id": "permis_conduire",
+  "demarche": "Permis de conduire camerounais",
+  "categorie": "Véhicules / Transport",
+
+  "description": "Document administratif autorisant une personne à conduire des véhicules appartenant aux catégories pour lesquelles elle a été formée et déclarée apte.",
+
+  "autorite_competente": {
+    "ministere": "Ministère des Transports (MINT)",
+    "organisme": "Service des permis de conduire",
+    "service": "Centre d'examen et de délivrance des permis de conduire"
+  },
+
+  "beneficiaires": [
+    "Toute personne remplissant les conditions d'âge et d'aptitude requises",
+    "Conducteurs souhaitant obtenir une nouvelle catégorie de permis"
+  ],
+
+  "conditions": [
+    "Avoir l'âge minimum requis selon la catégorie demandée",
+    "Être déclaré apte médicalement lorsque requis",
+    "Suivre une formation dans un établissement agréé",
+    "Réussir les épreuves théoriques et pratiques"
+  ],
+
   "pieces_requises": {
     "premiere_demande": [
-      "Pièce d'identité valide (Carte Nationale d'Identité, passeport ou titre de séjour)",
-      "Attestation d'inscription dans une auto-école agréée",
-      "Certificat d'aptitude à l'examen théorique",
-      "Certificat d'aptitude à l'examen pratique",
-      "Attestation d'enregistrement délivrée par le système du Ministère des Transports",
-      "Certificat médical d'aptitude à la conduite, lorsque requis"
+      "Demande de permis de conduire",
+      "Carte Nationale d'Identité ou pièce d'identité valide",
+      "Certificat médical d'aptitude à la conduite lorsque requis",
+      "Photographies d'identité selon les exigences en vigueur",
+      "Attestation de formation délivrée par une auto-école agréée"
     ],
+
     "renouvellement": [
+      "Ancien permis de conduire",
       "Pièce d'identité valide",
-      "Permis de conduire à renouveler",
-      "En cas de perte : déclaration de perte et attestation de non-retrait délivrée par l'administration compétente"
+      "Documents justificatifs demandés par le service compétent"
+    ],
+
+    "duplicata": [
+      "Déclaration de perte ou de vol",
+      "Pièce d'identité valide",
+      "Demande de duplicata"
+    ],
+
+    "cas_particuliers": [
+      "Permis étranger nécessitant une procédure de reconnaissance ou d'échange",
+      "Ajout d'une nouvelle catégorie de conduite"
     ]
   },
-  "cout_officiel_fcfa": {
-    "montant": null,
-    "devise": "FCFA",
-    "precision": "Les frais varient selon la nature de l'opération (première délivrance, renouvellement, duplicata, modification, échange de permis étranger) et la catégorie du permis. Aucun montant unique officiel ne s'applique à toutes les demandes."
-  },
-  "lieu_depot": {
-    "pre_demande": "Plateforme des Services Dématérialisés du Ministère des Transports.",
-    "depot_physique": "Centre de traitement ou Délégation Régionale des Transports compétente.",
-    "formation": "Auto-école agréée par le Ministère des Transports."
-  },
-  "delai_moyen": "Variable selon la nature de la demande et le centre de traitement. Le permis est délivré après validation du dossier et production du titre.",
-  "base_legale": [
-    "Code de la route camerounais.",
-    "Textes réglementaires du Ministère des Transports relatifs au permis de conduire."
-  ],
-  "source_officielle": [
+
+  "documents_associes": [
     {
-      "organisme": "Ministère des Transports (Services Dématérialisés)",
-      "url": "https://ssdtmint.cm/"
+      "nom": "Certificat médical",
+      "obligatoire": false,
+      "description": "Peut être exigé pour vérifier l'aptitude physique à la conduite."
     },
     {
-      "organisme": "Trésor Public Camerounais - Paiement des frais MINT",
-      "url": "https://tresorpublic.cm/fr/ministries/mint"
+      "nom": "Attestation d'auto-école",
+      "obligatoire": true,
+      "description": "Justifie la formation suivie auprès d'un établissement agréé."
     }
   ],
-  "derniere_verification": "2026-07-25",
-  "notes": "Le Ministère des Transports ne publie pas un tarif forfaitaire unique pour toutes les demandes de permis. Les frais dépendent de la prestation sollicitée (première délivrance, édition, renouvellement, duplicata, échange, etc.) et sont calculés lors de la procédure dématérialisée. Les frais de formation en auto-école ne constituent pas des frais administratifs officiels de l'État. Les rumeurs d'augmentation généralisée des frais de timbre ont été officiellement démenties par le Ministère des Transports. :contentReference[oaicite:0]{index=0}
+
+  "cout": {
+    "montant": null,
+    "devise": "XAF",
+    "variable": true,
+    "details": [],
+    "precision": "Le coût total dépend de plusieurs éléments : formation en auto-école, frais d'examen, droits administratifs et catégorie du permis."
+  },
+
+  "procedure": [
+    {
+      "ordre": 1,
+      "titre": "Inscription en auto-école",
+      "description": "Choisir une auto-école agréée et suivre la formation nécessaire."
+    },
+    {
+      "ordre": 2,
+      "titre": "Examen théorique",
+      "description": "Passer l'épreuve de connaissance du code de la route."
+    },
+    {
+      "ordre": 3,
+      "titre": "Examen pratique",
+      "description": "Passer l'épreuve de conduite avec les examinateurs compétents."
+    },
+    {
+      "ordre": 4,
+      "titre": "Délivrance du permis",
+      "description": "Après réussite, le permis est établi selon la procédure administrative."
+    }
+  ],
+
+  "lieu_depot": {
+    "physique": [
+      "Centre d'examen des permis de conduire",
+      "Services compétents du Ministère des Transports",
+      "Auto-école agréée pour la constitution initiale du dossier"
+    ],
+    "en_ligne": {
+      "disponible": false,
+      "url": null
+    }
+  },
+
+  "delai": {
+    "officiel": null,
+    "moyen_pratique": "Variable selon la programmation des examens, la disponibilité des centres et la production du titre."
+  },
+
+  "validite": {
+    "duree": "Variable selon la catégorie et les règles applicables.",
+    "conditions": "Le renouvellement peut être nécessaire selon la durée de validité attribuée."
+  },
+
+  "paiement": {
+    "moyens": [
+      "Paiement auprès des structures et services habilités"
+    ],
+    "en_ligne": false
+  },
+
+  "prise_rendez_vous": {
+    "obligatoire": false,
+    "modalite": "Dépend de l'organisation du centre d'examen."
+  },
+
+  "base_legale": [
+    {
+      "texte": "Réglementation camerounaise relative aux conditions d'obtention et de délivrance des permis de conduire",
+      "type": "Réglementation administrative",
+      "reference": "",
+      "date": ""
+    },
+    {
+      "texte": "Actes réglementaires relatifs à la circulation routière au Cameroun",
+      "type": "Réglementation",
+      "reference": "",
+      "date": ""
+    }
+  ],
+
+  "sources": [
+    {
+      "organisme": "Ministère des Transports du Cameroun",
+      "titre": "Services liés aux permis de conduire",
+      "url": "https://www.mint.gov.cm/",
+      "date_verification": "2026-07-25"
+    }
+  ],
+
+  "faq": [
+    {
+      "question": "Où obtenir un permis de conduire au Cameroun ?",
+      "reponse": "La procédure passe par une auto-école agréée puis les centres d'examen et services compétents du Ministère des Transports."
+    },
+    {
+      "question": "Peut-on obtenir un permis sans passer d'examen ?",
+      "reponse": "L'obtention d'un premier permis nécessite normalement de satisfaire aux exigences de formation et d'évaluation."
+    },
+    {
+      "question": "Le permis perdu peut-il être remplacé ?",
+      "reponse": "Oui, une procédure de duplicata peut être engagée avec les justificatifs nécessaires."
+    }
+  ],
+
+  "mots_cles": [
+    "Permis de conduire",
+    "Auto-école",
+    "Examen conduite",
+    "Transport",
+    "MINT"
+  ],
+
+  "notes": "Les coûts précis ne sont pas indiqués car ils dépendent de la catégorie du permis, des frais d'auto-école et des droits administratifs applicables. Les conditions peuvent évoluer selon les réformes du Ministère des Transports.",
+
+  "statut_verification": {
+    "verifie": true,
+    "niveau_confiance": "moyen",
+    "elements_a_verifier": [
+      "Barème officiel actuel des frais administratifs",
+      "Durées exactes de validité par catégorie",
+      "Évolution de la procédure numérique"
+    ]
+  },
+
+  "version": "1.0",
+
+  "derniere_verification": "2026-07-25"
+}
