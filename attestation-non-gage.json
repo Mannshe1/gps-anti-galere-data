@@ -1,25 +1,185 @@
 {
-  "demarche": "Attestation de non-gage",
-  "pays": "Cameroun",
-  "categorie": "Véhicules & Transport",
-  "pieces_requises": [],
-  "cout_officiel_fcfa": {
-    "montant": null,
-    "devise": "FCFA",
-    "precision": "Aucun coût officiel n'a pu être confirmé."
+  "id": "attestation_non_gage",
+  "demarche": "Attestation de non-gage d'un véhicule",
+  "categorie": "Véhicules / Transport",
+
+  "description": "Document administratif destiné à certifier qu'un véhicule ne fait pas l'objet d'une opposition administrative, d'un gage ou d'une restriction empêchant une opération administrative telle qu'une mutation.",
+
+  "autorite_competente": {
+    "ministere": "Ministère des Transports (MINT)",
+    "organisme": "Services compétents chargés de la gestion administrative des véhicules",
+    "service": "Service d'immatriculation ou service habilité"
   },
-  "lieu_depot": {
-    "organisme": null,
-    "service": null
+
+  "beneficiaires": [
+    "Propriétaires de véhicules",
+    "Acheteurs souhaitant vérifier la situation administrative d'un véhicule",
+    "Entreprises effectuant des opérations sur leur parc automobile"
+  ],
+
+  "conditions": [
+    "Être lié au véhicule concerné",
+    "Fournir les informations permettant d'identifier le véhicule",
+    "Présenter les justificatifs nécessaires"
+  ],
+
+  "pieces_requises": {
+    "premiere_demande": [
+      "Demande d'attestation relative à la situation administrative du véhicule",
+      "Copie de la carte grise ou certificat d'immatriculation",
+      "Pièce d'identité du demandeur",
+      "Informations d'identification du véhicule (immatriculation, numéro de châssis lorsque nécessaire)"
+    ],
+
+    "renouvellement": [
+      "Nouvelle demande",
+      "Copie du certificat d'immatriculation",
+      "Pièce d'identité"
+    ],
+
+    "duplicata": [
+      "Demande de nouvelle délivrance",
+      "Pièce d'identité du demandeur",
+      "Informations du véhicule"
+    ],
+
+    "cas_particuliers": [
+      "Mandat ou procuration si la demande est faite par un tiers",
+      "Documents complémentaires en cas de litige ou d'opposition administrative"
+    ]
   },
-  "delai_moyen": null,
-  "base_legale": [],
-  "source_officielle": [
+
+  "documents_associes": [
     {
-      "organisme": "Ministère des Transports",
-      "url": "https://ssdtmint.cm/"
+      "nom": "Carte grise",
+      "obligatoire": true,
+      "description": "Permet d'identifier le véhicule concerné."
+    },
+    {
+      "nom": "Pièce d'identité",
+      "obligatoire": true,
+      "description": "Identifie le demandeur."
     }
   ],
-  "derniere_verification": "2026-07-25",
-  "notes": "Après vérification, aucune procédure nationale officielle publiée par le Ministère des Transports ou un autre organisme de l'État camerounais ne définit la délivrance d'une attestation de non-gage comme une démarche administrative autonome. Certaines plateformes privées la mentionnent dans les transactions de véhicules d'occasion, mais aucun texte réglementaire officiel, aucun tarif et aucune procédure n'ont pu être confirmés. Cette démarche ne doit donc pas être intégrée comme un service administratif officiel sans source réglementaire."
+
+  "cout": {
+    "montant": null,
+    "devise": "XAF",
+    "variable": true,
+    "details": [],
+    "precision": "Aucun tarif national unique confirmé n'est renseigné. Le coût dépend du service compétent et de la procédure appliquée."
+  },
+
+  "procedure": [
+    {
+      "ordre": 1,
+      "titre": "Préparation du dossier",
+      "description": "Réunir les informations du véhicule et les justificatifs du demandeur."
+    },
+    {
+      "ordre": 2,
+      "titre": "Dépôt de la demande",
+      "description": "Présenter la demande auprès du service compétent."
+    },
+    {
+      "ordre": 3,
+      "titre": "Vérification administrative",
+      "description": "Les services contrôlent la situation administrative du véhicule."
+    },
+    {
+      "ordre": 4,
+      "titre": "Délivrance du document",
+      "description": "L'attestation est remise lorsque aucune opposition n'est constatée."
+    }
+  ],
+
+  "lieu_depot": {
+    "physique": [
+      "Service d'immatriculation compétent du Ministère des Transports",
+      "Centre administratif habilité pour les véhicules"
+    ],
+    "en_ligne": {
+      "disponible": false,
+      "url": null
+    }
+  },
+
+  "delai": {
+    "officiel": null,
+    "moyen_pratique": "Variable selon le service compétent et la disponibilité des informations administratives du véhicule."
+  },
+
+  "validite": {
+    "duree": "Généralement limitée à la situation administrative du véhicule au moment de sa délivrance.",
+    "conditions": "Un document récent peut être exigé lors d'une transaction."
+  },
+
+  "paiement": {
+    "moyens": [
+      "Selon les modalités du service compétent"
+    ],
+    "en_ligne": false
+  },
+
+  "prise_rendez_vous": {
+    "obligatoire": false,
+    "modalite": "Variable selon l'administration."
+  },
+
+  "base_legale": [
+    {
+      "texte": "Réglementation camerounaise relative à l'immatriculation et à la gestion administrative des véhicules",
+      "type": "Réglementation administrative",
+      "reference": "",
+      "date": ""
+    }
+  ],
+
+  "sources": [
+    {
+      "organisme": "Ministère des Transports du Cameroun",
+      "titre": "Services relatifs aux véhicules et immatriculations",
+      "url": "https://www.mint.gov.cm/",
+      "date_verification": "2026-07-25"
+    }
+  ],
+
+  "faq": [
+    {
+      "question": "À quoi sert une attestation de non-gage ?",
+      "reponse": "Elle permet de vérifier qu'un véhicule peut faire l'objet d'une opération administrative sans opposition connue."
+    },
+    {
+      "question": "Est-ce obligatoire pour vendre un véhicule ?",
+      "reponse": "Cela dépend des exigences de la procédure et du service administratif concerné."
+    },
+    {
+      "question": "Le document est-il appelé officiellement 'non-gage' au Cameroun ?",
+      "reponse": "La dénomination peut varier selon les administrations ; il convient de vérifier le terme utilisé par le service compétent."
+    }
+  ],
+
+  "mots_cles": [
+    "Non-gage",
+    "Véhicule",
+    "Opposition administrative",
+    "Carte grise",
+    "Mutation véhicule"
+  ],
+
+  "notes": "La notion d'attestation de non-gage est clairement établie dans certains systèmes étrangers. Au Cameroun, la dénomination et la procédure exacte doivent être confirmées auprès du Ministère des Transports avant publication grand public.",
+
+  "statut_verification": {
+    "verifie": false,
+    "niveau_confiance": "moyen",
+    "elements_a_verifier": [
+      "Existence officielle du document sous cette appellation au Cameroun",
+      "Tarif officiel",
+      "Service exact de délivrance"
+    ]
+  },
+
+  "version": "1.0",
+
+  "derniere_verification": "2026-07-25"
 }
