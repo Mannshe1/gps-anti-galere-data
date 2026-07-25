@@ -1,0 +1,101 @@
+{
+  "id": "traduction_assermentee",
+  "demarche": "Traduction assermentée de documents",
+  "pays": "Cameroun",
+  "categorie": "Justice / Services juridiques",
+  "ministere": {
+    "nom": "Ministère de la Justice",
+    "sigle": "MINJUSTICE"
+  },
+  "organisme_competent": {
+    "nom": "Traducteur-interprète agréé auprès des juridictions camerounaises",
+    "type": "Profession judiciaire auxiliaire de justice"
+  },
+  "description": "Traduction officielle d'un document dans une autre langue par un traducteur habilité, dont la signature et le cachet donnent un caractère officiel à la traduction.",
+  "beneficiaires": [
+    "Particuliers",
+    "Entreprises",
+    "Administrations",
+    "Organisations nécessitant une traduction officielle"
+  ],
+  "pieces_requises": {
+    "demande_standard": [
+      "Document original à traduire ou copie lisible du document",
+      "Pièce d'identité du demandeur lorsque le traducteur l'exige",
+      "Informations précisant la langue de traduction souhaitée"
+    ]
+  },
+  "documents_frequemment_traduits": [
+    "Actes de naissance",
+    "Actes de mariage",
+    "Diplômes",
+    "Relevés de notes",
+    "Contrats",
+    "Décisions judiciaires",
+    "Documents administratifs étrangers"
+  ],
+  "cout": {
+    "montant": null,
+    "devise": "XAF",
+    "variable": true,
+    "details": [],
+    "precision": "Les honoraires du traducteur sont généralement fixés librement selon la langue, le volume du document, l'urgence et la complexité."
+  },
+  "procedure": [
+    {
+      "ordre": 1,
+      "titre": "Choix d'un traducteur agréé",
+      "description": "Sélectionner un traducteur-interprète reconnu par les juridictions camerounaises."
+    },
+    {
+      "ordre": 2,
+      "titre": "Dépôt du document",
+      "description": "Remettre le document original ou une copie exploitable."
+    },
+    {
+      "ordre": 3,
+      "titre": "Traduction et certification",
+      "description": "Le traducteur réalise la traduction, appose sa signature et son cachet."
+    }
+  ],
+  "lieu_depot": {
+    "physique": [
+      "Cabinet du traducteur-interprète agréé",
+      "Étude professionnelle du traducteur"
+    ],
+    "en_ligne": {
+      "disponible": false,
+      "url": null
+    }
+  },
+  "delai": {
+    "officiel": null,
+    "constate": "Variable selon le traducteur, la langue, le nombre de pages et le niveau d'urgence."
+  },
+  "validite": {
+    "duree": "La traduction reste valable tant que le document source reste valable et que l'organisme destinataire l'accepte."
+  },
+  "base_legale": [
+    {
+      "texte": "Organisation judiciaire camerounaise relative aux auxiliaires de justice",
+      "type": "Textes judiciaires"
+    },
+    {
+      "texte": "Textes régissant les experts et traducteurs-interprètes agréés auprès des juridictions",
+      "type": "Réglementation professionnelle"
+    }
+  ],
+  "source_officielle": [
+    {
+      "organisme": "Ministère de la Justice (MINJUSTICE)",
+      "url": "https://www.minjustice.gov.cm/",
+      "date_consultation": "2026-07-25"
+    },
+    {
+      "organisme": "Cours et tribunaux camerounais - Liste des auxiliaires de justice",
+      "type": "Source judiciaire"
+    }
+  ],
+  "derniere_verification": "2026-07-25",
+  "notes": "La traduction assermentée ne constitue pas une procédure administrative avec un tarif public unique. Le coût correspond aux honoraires du traducteur agréé et varie selon les langues (français-anglais, allemand, espagnol, etc.), le volume et l'urgence. Pour les documents destinés à l'étranger, une légalisation ou une authentification supplémentaire peut parfois être demandée."
+}
