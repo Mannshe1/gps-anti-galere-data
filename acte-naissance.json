@@ -1,0 +1,42 @@
+{
+  "demarche": "Copie certifiée conforme de l'acte de naissance",
+  "pays": "Cameroun",
+  "categorie": "État civil",
+  "pieces_requises": {
+    "demande_par_le_titulaire": [
+      "Original ou références de l'acte de naissance inscrit dans les registres de la commune",
+      "Pièce d'identité valide du demandeur"
+    ],
+    "demande_par_un_representant": [
+      "Pièce d'identité du représentant",
+      "Références de l'acte de naissance",
+      "Procuration ou document justifiant la qualité du représentant, lorsque exigé par l'officier d'état civil"
+    ]
+  },
+  "cout_officiel_fcfa": {
+    "montant": null,
+    "devise": "FCFA",
+    "precision": "Les droits applicables (timbre fiscal, timbre communal ou autres frais) peuvent varier selon la commune. Aucun tarif national unique en vigueur n'a pu être confirmé."
+  },
+  "lieu_depot": {
+    "organisme": "Service de l'état civil",
+    "etablissement": "Mairie (Commune) où l'acte de naissance est conservé dans les registres d'état civil."
+  },
+  "delai_moyen": "Le document est généralement délivré le jour même lorsque l'acte est disponible dans les registres ; dans certaines communes, le délai peut aller de 1 à 3 jours ouvrables.",
+  "base_legale": [
+    "Ordonnance n°81-02 du 29 juin 1981 portant organisation de l'état civil au Cameroun, modifiée et complétée.",
+    "Textes d'application relatifs à l'état civil."
+  ],
+  "source_officielle": [
+    {
+      "organisme": "Communauté Urbaine d'Edéa",
+      "url": "https://www.edea.cm/ova_doc/procedure-pour-acte-de-naissance/"
+    },
+    {
+      "organisme": "Commune d'Arrondissement de Yaoundé II",
+      "url": "https://yaounde2.cm/ova_doc/procedure-pour-acte-de-naissance/"
+    }
+  ],
+  "derniere_verification": "2026-07-25",
+  "notes": "Le coût n'est pas uniforme sur l'ensemble du territoire. Les communes appliquent des droits communaux et fiscaux qui peuvent différer. En l'absence d'un texte national fixant un tarif unique applicable en 2026, aucun montant officiel unique n'est renseigné afin d'éviter toute information inexacte."
+}
