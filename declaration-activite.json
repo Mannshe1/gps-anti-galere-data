@@ -1,0 +1,50 @@
+{
+  "demarche": "Déclaration de début d'activité",
+  "pays": "Cameroun",
+  "categorie": "Fiscalité",
+  "pieces_requises": {
+    "personne_physique": [
+      "Numéro d'Identifiant Unique (NIU) obtenu lors de l'immatriculation fiscale",
+      "Carte Nationale d'Identité ou passeport en cours de validité",
+      "Plan de localisation de l'établissement",
+      "Registre du Commerce et du Crédit Mobilier (RCCM), lorsque l'activité y est soumise",
+      "Relevé d'Identité Bancaire (RIB), lorsque requis"
+    ],
+    "personne_morale": [
+      "NIU",
+      "RCCM ou acte de création",
+      "Plan de localisation",
+      "Relevé d'Identité Bancaire (RIB)",
+      "Coordonnées électroniques de l'entreprise"
+    ]
+  },
+  "cout_officiel_fcfa": {
+    "montant": 0,
+    "devise": "FCFA",
+    "precision": "La déclaration de début d'activité, intégrée à la procédure d'immatriculation fiscale, est gratuite."
+  },
+  "lieu_depot": {
+    "demarche_en_ligne": "Portail de la Direction Générale des Impôts (DGI)",
+    "url": "https://www.impots.cm",
+    "centre_competent": "Centre des Impôts territorialement compétent après attribution du NIU."
+  },
+  "delai_moyen": "L'immatriculation doit être effectuée dans les quinze (15) jours ouvrables suivant le début de l'activité. Le NIU est généralement attribué automatiquement après validation du dossier.",
+  "base_legale": [
+    {
+      "texte": "Livre des Procédures Fiscales",
+      "reference": "Article L1"
+    }
+  ],
+  "source_officielle": [
+    {
+      "organisme": "Direction Générale des Impôts (DGI)",
+      "url": "https://www.impots.cm"
+    },
+    {
+      "organisme": "Guide officiel de l'immatriculation fiscale",
+      "url": "https://www.impots.cm/fr/immatriculation"
+    }
+  ],
+  "derniere_verification": "2026-07-25",
+  "notes": "La DGI ne distingue plus une formalité autonome de « déclaration de début d'activité ». L'obligation est satisfaite par l'immatriculation fiscale en ligne, qui attribue automatiquement un NIU. Toute personne redevable d'un impôt, droit ou taxe doit accomplir cette formalité dans les quinze jours ouvrables suivant le début de son activité."
+}
