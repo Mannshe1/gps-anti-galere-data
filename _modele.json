@@ -1,18 +1,123 @@
 {
-  "id": "slug-de-la-demarche",
-  "titre": "Nom complet de la démarche",
-  "categorie": "etat-civil|justice|vehicule|fiscalite|entreprise|actes-divers",
-  "pieces_requises": [
-    "Pièce 1",
-    "Pièce 2"
+  "id": "",
+  "demarche": "",
+  "categorie": "",
+
+  "description": "",
+
+  "autorite_competente": {
+    "ministere": "",
+    "organisme": "",
+    "service": ""
+  },
+
+  "beneficiaires": [],
+
+  "conditions": [],
+
+  "pieces_requises": {
+    "premiere_demande": [],
+    "renouvellement": [],
+    "duplicata": [],
+    "cas_particuliers": []
+  },
+
+  "documents_associes": [
+    {
+      "nom": "",
+      "obligatoire": false,
+      "description": ""
+    }
   ],
-  "cout_officiel_fcfa": 0,
-  "cout_timbres_fcfa": 0,
-  "cout_total_estime_fcfa": 0,
-  "lieu": "Administration compétente",
-  "delai_moyen": "Délai indicatif",
-  "base_legale": "Référence du texte officiel ou source",
-  "derniere_verification": "AAAA-MM-JJ",
-  "source_url": "URL de la source officielle consultée",
-  "notes": "Avertissements, cas particuliers, précisions utiles"
+
+  "cout": {
+    "montant": null,
+    "devise": "XAF",
+    "variable": false,
+    "details": [
+      {
+        "libelle": "",
+        "montant": null,
+        "devise": "XAF"
+      }
+    ],
+    "precision": ""
+  },
+
+  "procedure": [
+    {
+      "ordre": 1,
+      "titre": "",
+      "description": ""
+    }
+  ],
+
+  "lieu_depot": {
+    "physique": [
+      ""
+    ],
+    "en_ligne": {
+      "disponible": false,
+      "url": null
+    }
+  },
+
+  "delai": {
+    "officiel": "",
+    "moyen_pratique": ""
+  },
+
+  "validite": {
+    "duree": "",
+    "conditions": ""
+  },
+
+  "paiement": {
+    "moyens": [],
+    "en_ligne": false
+  },
+
+  "prise_rendez_vous": {
+    "obligatoire": false,
+    "modalite": ""
+  },
+
+  "base_legale": [
+    {
+      "texte": "",
+      "type": "",
+      "reference": "",
+      "date": ""
+    }
+  ],
+
+  "sources": [
+    {
+      "organisme": "",
+      "titre": "",
+      "url": "",
+      "date_verification": ""
+    }
+  ],
+
+  "faq": [
+    {
+      "question": "",
+      "reponse": ""
+    }
+  ],
+
+  "mots_cles": [],
+
+  "notes": "",
+
+  "statut_verification": {
+    "verifie": true,
+    "niveau_confiance": "élevé",
+    "elements_a_verifier": []
+  },
+
+  "version": "1.0",
+
+  "derniere_verification": ""
 }
