@@ -1,49 +1,197 @@
 {
-  "demarche": "Carte grise (Certificat d'immatriculation)",
-  "pays": "Cameroun",
-  "categorie": "Véhicules & Transport",
+  "id": "carte_grise",
+  "demarche": "Carte grise (Certificat d'immatriculation d'un véhicule)",
+  "categorie": "Véhicules / Transport",
+
+  "description": "Document administratif attestant l'immatriculation d'un véhicule et identifiant son propriétaire ou titulaire légal.",
+
+  "autorite_competente": {
+    "ministere": "Ministère des Transports (MINT)",
+    "organisme": "Service des immatriculations des véhicules",
+    "service": "Centre d'immatriculation compétent"
+  },
+
+  "beneficiaires": [
+    "Propriétaires de véhicules neufs ou d'occasion",
+    "Personnes ayant acquis un véhicule par achat, donation ou succession",
+    "Entreprises possédant des véhicules"
+  ],
+
+  "conditions": [
+    "Être propriétaire ou titulaire légal du véhicule",
+    "Présenter les justificatifs du véhicule",
+    "S'acquitter des frais et taxes applicables"
+  ],
+
   "pieces_requises": {
-    "vehicule_neuf": [
-      "Demande de certificat d'immatriculation",
-      "Facture d'achat du véhicule",
-      "Déclaration en douane ou certificat de dédouanement",
-      "Pièce d'identité valide du propriétaire (CNI, passeport ou titre de séjour)",
-      "Numéro d'Identifiant Unique (NIU), lorsque requis",
-      "Attestation d'assurance automobile en cours de validité"
+    "premiere_demande": [
+      "Demande d'immatriculation du véhicule",
+      "Facture d'achat ou justificatif de propriété",
+      "Certificat de vente ou acte de cession pour un véhicule d'occasion",
+      "Pièce d'identité du propriétaire",
+      "Certificat de conformité ou documents techniques du véhicule lorsque requis",
+      "Justificatif de paiement des droits et taxes applicables"
     ],
-    "vehicule_occasion": [
-      "Demande de certificat d'immatriculation",
-      "Ancienne carte grise",
-      "Acte de cession ou facture de vente",
-      "Pièce d'identité valide du nouveau propriétaire",
-      "Attestation d'assurance automobile en cours de validité",
-      "Numéro d'Identifiant Unique (NIU), lorsque requis"
+
+    "renouvellement": [
+      "Ancien certificat d'immatriculation",
+      "Pièce d'identité du propriétaire",
+      "Justificatifs administratifs selon le motif du renouvellement"
+    ],
+
+    "duplicata": [
+      "Déclaration de perte ou de vol lorsque nécessaire",
+      "Pièce d'identité du propriétaire",
+      "Documents permettant d'identifier le véhicule"
+    ],
+
+    "cas_particuliers": [
+      "Documents douaniers pour les véhicules importés",
+      "Acte de succession ou document juridique en cas d'héritage",
+      "Documents de société pour les véhicules appartenant aux personnes morales"
     ]
   },
-  "cout_officiel_fcfa": {
-    "montant": null,
-    "devise": "FCFA",
-    "precision": "Le coût n'est pas forfaitaire. Il est calculé automatiquement par le système du Ministère des Transports selon plusieurs critères (type de véhicule, puissance fiscale, nature de l'opération, catégorie du véhicule et taxes applicables)."
-  },
-  "lieu_depot": {
-    "pre_demande": "Plateforme numérique du Ministère des Transports (MINT).",
-    "depot_physique": "Délégation Régionale des Transports ou Centre de traitement agréé sélectionné lors de la demande."
-  },
-  "delai_moyen": "Le délai dépend du type de dossier et du centre de traitement. Un récépissé est délivré après le dépôt et le titre est retiré dès sa production.",
-  "base_legale": [
-    "Code de la route camerounais.",
-    "Textes réglementaires du Ministère des Transports relatifs à l'immatriculation des véhicules."
-  ],
-  "source_officielle": [
+
+  "documents_associes": [
     {
-      "organisme": "Ministère des Transports (Services numériques)",
-      "url": "https://ssdtmint.cm/en/"
+      "nom": "Facture d'achat ou acte de cession",
+      "obligatoire": true,
+      "description": "Justifie la propriété du véhicule."
     },
     {
-      "organisme": "Plateforme Carte Grise Cameroun",
-      "url": "https://ci4.cartegrise.cm/"
+      "nom": "Pièce d'identité",
+      "obligatoire": true,
+      "description": "Identifie le propriétaire."
+    },
+    {
+      "nom": "Contrôle technique",
+      "obligatoire": false,
+      "description": "Peut être exigé selon l'âge et la catégorie du véhicule."
     }
   ],
-  "derniere_verification": "2026-07-25",
-  "notes": "Le montant des droits varie selon les caractéristiques du véhicule et l'opération demandée (première immatriculation, mutation, duplicata, etc.). Aucun tarif unique officiel n'existe pour toutes les cartes grises. La plateforme calcule automatiquement le montant à payer avant validation du dossier. Un exemple de récépissé officiel montre un montant de 43 500 FCFA pour une mutation, mais ce montant n'est pas applicable à tous les véhicules. :contentReference[oaicite:0]{index=0}"
+
+  "cout": {
+    "montant": null,
+    "devise": "XAF",
+    "variable": true,
+    "details": [],
+    "precision": "Le coût dépend de plusieurs facteurs : type de véhicule, puissance fiscale, usage, taxes et situation administrative. Aucun montant unique ne peut être indiqué sans précision du véhicule."
+  },
+
+  "procedure": [
+    {
+      "ordre": 1,
+      "titre": "Constitution du dossier",
+      "description": "Réunir les documents liés au propriétaire et au véhicule."
+    },
+    {
+      "ordre": 2,
+      "titre": "Dépôt de la demande",
+      "description": "Déposer le dossier auprès du service d'immatriculation compétent."
+    },
+    {
+      "ordre": 3,
+      "titre": "Contrôle administratif",
+      "description": "Les services vérifient les informations du véhicule et du propriétaire."
+    },
+    {
+      "ordre": 4,
+      "titre": "Paiement des droits",
+      "description": "Régler les frais et taxes applicables."
+    },
+    {
+      "ordre": 5,
+      "titre": "Délivrance de la carte grise",
+      "description": "Le certificat d'immatriculation est remis au propriétaire."
+    }
+  ],
+
+  "lieu_depot": {
+    "physique": [
+      "Centre d'immatriculation des véhicules du Ministère des Transports",
+      "Services habilités du MINT"
+    ],
+    "en_ligne": {
+      "disponible": true,
+      "url": "https://www.mint.gov.cm/"
+    }
+  },
+
+  "delai": {
+    "officiel": null,
+    "moyen_pratique": "Variable selon le centre, la nature du véhicule et le traitement administratif du dossier."
+  },
+
+  "validite": {
+    "duree": "Durée liée à l'existence administrative du véhicule et à la situation du propriétaire.",
+    "conditions": "Une modification est nécessaire en cas de changement de propriétaire ou d'informations importantes."
+  },
+
+  "paiement": {
+    "moyens": [
+      "Selon les modalités prévues par les services compétents"
+    ],
+    "en_ligne": false
+  },
+
+  "prise_rendez_vous": {
+    "obligatoire": false,
+    "modalite": "Variable selon le centre d'immatriculation."
+  },
+
+  "base_legale": [
+    {
+      "texte": "Réglementation camerounaise relative à l'immatriculation des véhicules automobiles",
+      "type": "Réglementation administrative",
+      "reference": "",
+      "date": ""
+    }
+  ],
+
+  "sources": [
+    {
+      "organisme": "Ministère des Transports du Cameroun",
+      "titre": "Services d'immatriculation des véhicules",
+      "url": "https://www.mint.gov.cm/",
+      "date_verification": "2026-07-25"
+    }
+  ],
+
+  "faq": [
+    {
+      "question": "Quand faut-il établir une carte grise ?",
+      "reponse": "Lors de l'acquisition d'un véhicule neuf ou d'occasion nécessitant une immatriculation."
+    },
+    {
+      "question": "Peut-on changer le propriétaire d'une carte grise ?",
+      "reponse": "Oui, une procédure de mutation administrative est nécessaire."
+    },
+    {
+      "question": "Le prix de la carte grise est-il fixe ?",
+      "reponse": "Non, il dépend notamment des caractéristiques du véhicule et des taxes applicables."
+    }
+  ],
+
+  "mots_cles": [
+    "Carte grise",
+    "Certificat d'immatriculation",
+    "Véhicule",
+    "Transport",
+    "Mutation véhicule"
+  ],
+
+  "notes": "Le coût exact ne doit pas être généralisé car il varie selon la catégorie du véhicule, la puissance fiscale, l'origine du véhicule et les taxes applicables.",
+
+  "statut_verification": {
+    "verifie": true,
+    "niveau_confiance": "moyen",
+    "elements_a_verifier": [
+      "Barème tarifaire exact selon catégorie de véhicule",
+      "Disponibilité complète des démarches numériques"
+    ]
+  },
+
+  "version": "1.0",
+
+  "derniere_verification": "2026-07-25"
 }
