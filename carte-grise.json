@@ -1,0 +1,49 @@
+{
+  "demarche": "Carte grise (Certificat d'immatriculation)",
+  "pays": "Cameroun",
+  "categorie": "Véhicules & Transport",
+  "pieces_requises": {
+    "vehicule_neuf": [
+      "Demande de certificat d'immatriculation",
+      "Facture d'achat du véhicule",
+      "Déclaration en douane ou certificat de dédouanement",
+      "Pièce d'identité valide du propriétaire (CNI, passeport ou titre de séjour)",
+      "Numéro d'Identifiant Unique (NIU), lorsque requis",
+      "Attestation d'assurance automobile en cours de validité"
+    ],
+    "vehicule_occasion": [
+      "Demande de certificat d'immatriculation",
+      "Ancienne carte grise",
+      "Acte de cession ou facture de vente",
+      "Pièce d'identité valide du nouveau propriétaire",
+      "Attestation d'assurance automobile en cours de validité",
+      "Numéro d'Identifiant Unique (NIU), lorsque requis"
+    ]
+  },
+  "cout_officiel_fcfa": {
+    "montant": null,
+    "devise": "FCFA",
+    "precision": "Le coût n'est pas forfaitaire. Il est calculé automatiquement par le système du Ministère des Transports selon plusieurs critères (type de véhicule, puissance fiscale, nature de l'opération, catégorie du véhicule et taxes applicables)."
+  },
+  "lieu_depot": {
+    "pre_demande": "Plateforme numérique du Ministère des Transports (MINT).",
+    "depot_physique": "Délégation Régionale des Transports ou Centre de traitement agréé sélectionné lors de la demande."
+  },
+  "delai_moyen": "Le délai dépend du type de dossier et du centre de traitement. Un récépissé est délivré après le dépôt et le titre est retiré dès sa production.",
+  "base_legale": [
+    "Code de la route camerounais.",
+    "Textes réglementaires du Ministère des Transports relatifs à l'immatriculation des véhicules."
+  ],
+  "source_officielle": [
+    {
+      "organisme": "Ministère des Transports (Services numériques)",
+      "url": "https://ssdtmint.cm/en/"
+    },
+    {
+      "organisme": "Plateforme Carte Grise Cameroun",
+      "url": "https://ci4.cartegrise.cm/"
+    }
+  ],
+  "derniere_verification": "2026-07-25",
+  "notes": "Le montant des droits varie selon les caractéristiques du véhicule et l'opération demandée (première immatriculation, mutation, duplicata, etc.). Aucun tarif unique officiel n'existe pour toutes les cartes grises. La plateforme calcule automatiquement le montant à payer avant validation du dossier. Un exemple de récépissé officiel montre un montant de 43 500 FCFA pour une mutation, mais ce montant n'est pas applicable à tous les véhicules. :contentReference[oaicite:0]{index=0}"
+}
